@@ -1,0 +1,70 @@
+@font-face {
+    font-family: Relaway;
+    src: url(polices/Raleway/Raleway-Black.ttf);
+    src: url(polices/Raleway/Raleway-Bold.ttf);
+    src: url(polices/Raleway/Raleway-BoldItalic.ttf);
+    src: url(polices/Raleway/Raleway-SemiBold.ttf);
+    src: url(polices/Raleway/Raleway-SemiBoldItalic.ttf);
+    src: url(polices/Raleway/Raleway-ExtraBold.ttf);
+    src: url(polices/Raleway/Raleway-Regular.ttf);
+    src: url(polices/Raleway/Raleway-Italic.ttf);
+    src: url(polices/Raleway/Raleway-BlackItalic.ttf);
+    src: url(polices/Raleway/Raleway-ExtraBoldItalic.ttf);
+    src: url(polices/Raleway/Raleway-ExtraLight.ttf);
+    src: url(polices/Raleway/Raleway-ExtraLightItalic.ttf);
+    src: url(polices/Raleway/Raleway-Italic-VariableFont_wght.ttf);
+    src: url(polices/Raleway/Raleway-Light.ttf);
+    src: url(polices/Raleway/Raleway-LightItalic.ttf);
+    src: url(polices/Raleway/Raleway-Medium.ttf);
+    src: url(polices/Raleway/Raleway-MediumItalic.ttf);
+    src: url(polices/Raleway/Raleway-Thin.ttf);
+    src: url(polices/Raleway/Raleway-ThinItalic.ttf);
+    src: url(polices/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+
+body
+{
+    background-image: url(images/Logo.svg);
+    background-repeat: no-repeat;
+    background-position: 50px 30px;
+    margin: 20px 30px 20px 30px; 
+    font-family: Relaway , Arial, Helvetica, sans-serif;
+
+}
+
+
+nav
+{
+display: flex;
+justify-content: flex-end;
+}
+
+
+nav ul
+{
+    display: flex;
+    list-style: none;
+}
+
+
+nav li
+{
+margin-left: 80px;
+}
+
+a:link
+{
+    text-decoration: none;
+}
+
+#hebergements
+{
+    color:#0065FC;
+}
+
+#sinscrire
+{
+    color:#0065FC;
+    font-weight: bold;
+}
