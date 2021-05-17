@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style.css"  />
+        <script src="https://kit.fontawesome.com/f8139cb276.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
     </head>
 
@@ -21,7 +22,82 @@
 
 
         <section>
-            
+            <div id="section1">
+                <div>
+                    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                    <p>En plein centre ville ou en plein nature</p>
+                </div>
+
+
+
+
+                <form id="formulaire">
+                    <div class="bulle-map">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                            <i class="fas fa-map-marker-alt fa-stack-1x"></i>
+                    </span></div>
+
+                    <div id="ville">
+                        <label for="recherche"></label>
+                        <input type="search" placeholder="Ville" id="recherche"/>
+                    </div>
+                    <div>
+                        <input type="button" value="Rechercher" id="bouton">
+                    </div>
+                </form>
+
+
+
+
+                <div id="filtres">
+                    <div class="filtremot">filtre </div>
+                    <div class="economique">
+                        <div class="bulle-economique">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                <i class="fas fa-money-bill-wave fa-stack-1x"></i>
+                              </span></div>
+                        <div class="moteconomique">Économique</div>
+                   </div>
+                    <div class="familial">
+                        <div class="bulle-familial">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                <i class="fas fa-child fa-stack-1x"></i>
+                              </span></div>
+                        <div class="motfamilial">Familial</div> 
+                    </div>
+                    <div class="romantique">
+                        <div class="bulle-romantique">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                <i class="fas fa-heart fa-stack-1x"></i>
+                              </span></div>
+                        <div class="motromantique">Romantique </div>
+                    </div>
+                    <div class="animauxautorise">
+                        <div class="bulle-animaux">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                <i class="fas fa-dog fa-stack-1x"></i>
+                              </span></div>
+                        <div class="motanimaux">Animaux autorisés </div>
+                    </div>
+                </div>
+
+                
+                
+                
+                <div id="info">
+                    <div class="bulle-info">
+                        <span class="fa-stack fa-1x">
+                            <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                            <i class="fa fa-info fa-stack-1x"></i>
+                          </span></div>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </div>
 
         </section>
 
@@ -44,6 +120,8 @@
 
 
         <footer>
+            
+            
 
         </footer>
     
