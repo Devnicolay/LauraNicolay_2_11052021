@@ -35,40 +35,54 @@ body
 
 
 
+/* Header*/
 
-nav
+header nav
 {
 display: flex;
 justify-content: flex-end;
 }
 
 
-nav ul
+header nav ul
 {
     display: flex;
     list-style: none;
 }
 
 
-nav li
+header nav li
 {
 margin-left: 80px;
 }
 
 
-a:link
+header a:link
 {
     text-decoration: none;
 }
 
 
-#hebergements
+header a:hover
+{
+   text-decoration: overline #0065FC; 
+   padding-bottom: 40px;
+}
+
+
+header #hebergements
 {
     color:#0065FC;
 }
 
 
-#sinscrire
+header #activites
+{
+    color: gray;
+}
+
+
+header #sinscrire
 {
     color:#0065FC;
     font-weight: bold;
@@ -77,6 +91,8 @@ a:link
 
 
 
+
+/* Section 1*/
 
 #section1 h2
 {
@@ -95,9 +111,9 @@ a:link
 
 
 
+/* Partie formulaire de la Section 2*/
 
-
-#formulaire
+#section1 #formulaire
 {
     border-style: solid;
     border-width: 1px;
@@ -114,7 +130,7 @@ a:link
 
 
 
-.bulle-map .fa-map-marker-alt
+#section1 .bulle-map .fa-map-marker-alt
 {
     background-color: #F2F2F2;
     width: 50px;  
@@ -124,7 +140,7 @@ a:link
 
 
 
-#ville
+#section1 #ville
 {
     display: flex;
     justify-content: flex-start;
@@ -132,9 +148,10 @@ a:link
 
 
 
-input[type=search] 
+#section1 input[type=search] 
 {
-    border: 0px;    /*Enlève le contour de la zone recherche*/
+    border: 0px; 
+    width: 220px;   /*Enlève le contour de la zone recherche*/
 }
 
 
@@ -151,7 +168,7 @@ input[type=search]
 
 }
 
-input[type=button] 
+#section1 input[type=button] 
 {
     border: 0px;    /*Enlève le contour du bouton*/
 }
@@ -160,9 +177,9 @@ input[type=button]
 
 
 
+/* Partie des filtres de la Section 2*/
 
-
-#filtres
+#section1 #filtres
 {
     display: flex;
     justify-content: space-around;
@@ -171,7 +188,7 @@ input[type=button]
 }
 
 
-.filtremot
+#section1 .filtremot
 {
     margin-top: 8px;
     font-weight: bold;
@@ -180,7 +197,7 @@ input[type=button]
 
 
 
-.economique
+#section1 .economique
 {
     border-style: solid;
     border-width: 2px;
@@ -194,7 +211,7 @@ input[type=button]
 }
 
 
-.fa-money-bill-wave
+#section1 .fa-money-bill-wave
 {
     color: #0065FC; 
     
@@ -202,21 +219,21 @@ input[type=button]
 }
 
 
-.bulle-economique .icon-background
+#section1 .bulle-economique .icon-background
 {
     color: #DEEBFF;
     
 }
 
 
-.bulle-economique
+#section1 .bulle-economique
 {
     margin-left: -10px;
     
 }
 
 
-.moteconomique
+#section1 .moteconomique
 {
     padding-top: 10px;
     padding-left: 10px;
@@ -225,7 +242,7 @@ input[type=button]
 
 
 
-.familial
+#section1 .familial
 {
     border-style: solid;
     border-width: 2px;
@@ -239,7 +256,7 @@ input[type=button]
 }
 
 
-.fa-child
+#section1 .fa-child
 {
     color: #0065FC; 
     
@@ -247,14 +264,14 @@ input[type=button]
 }
 
 
-.bulle-familial .icon-background
+#section1 .bulle-familial .icon-background
 {
     color: #DEEBFF;
     
 }
 
 
-.bulle-familial
+#section1 .bulle-familial
 {
     margin-left: -10px;
     
@@ -262,7 +279,7 @@ input[type=button]
 
 
 
-.motfamilial
+#section1 .motfamilial
 {
     padding-top: 10px;
     padding-left: 10px;
@@ -271,7 +288,7 @@ input[type=button]
 
 
 
-.romantique
+#section1 .romantique
 {
     border-style: solid;
     border-width: 2px;
@@ -285,7 +302,7 @@ input[type=button]
 }
 
 
-.fa-heart
+#section1 .fa-heart
 {
     color: #0065FC; 
     
@@ -293,21 +310,21 @@ input[type=button]
 }
 
 
-.bulle-romantique .icon-background
+#section1 .bulle-romantique .icon-background
 {
     color: #DEEBFF;
     
 }
 
 
-.bulle-romantique
+#section1 .bulle-romantique
 {
     margin-left: -10px;
     
 }
 
 
-.motromantique
+#section1 .motromantique
 {
     padding-top: 10px;
     padding-left: 10px;
@@ -316,7 +333,7 @@ input[type=button]
 
 
 
-.animauxautorise
+#section1 .animauxautorise
 {
     border-style: solid;
     border-width: 2px;
@@ -330,7 +347,7 @@ input[type=button]
 }
 
 
-.fa-dog
+#section1 .fa-dog
 {
     color: #0065FC; 
     
@@ -338,21 +355,21 @@ input[type=button]
 }
 
 
-.bulle-animaux .icon-background
+#section1 .bulle-animaux .icon-background
 {
     color: #DEEBFF;
     
 }
 
 
-.bulle-animaux
+#section1 .bulle-animaux
 {
     margin-left: -10px;
     
 }
 
 
-.motanimaux
+#section1 .motanimaux
 {
     padding-top: 10px;
     padding-left: 10px;
@@ -361,20 +378,21 @@ input[type=button]
 
 
 
+/* Partie info avec la bulle info de la Section 2*/
 
-#info
+#section1 #info
 {
     display: flex;
 }
 
 
-.bulle-info
+#section1 .bulle-info
 {
     margin-right: 30px;
     margin-top: 5px;
 }
 
-.fa-info
+#section1 .fa-info
 {
     color: #0065FC;
     padding-left: 3px;
@@ -382,7 +400,7 @@ input[type=button]
 }
 
 
-.bulle-info .icon-background
+#section1 .bulle-info .icon-background
 {
     color: white;
     border-width: 2px;
@@ -397,3 +415,167 @@ input[type=button]
 
 
    
+
+
+
+
+/* Section 2*/
+
+/* Partie hebergements */
+
+
+.hebergements
+{
+    background-color: #F2F2F2;
+    padding: 20px;
+    margin: 30px;
+    width: 660px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+.heberg 
+{
+    display: grid;
+    grid-template-columns: 220px 220px 220px;
+    grid-template-rows: 200px 200px;
+
+}
+
+.heberg div 
+{
+    background: white;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+.imgcard-heberg
+{
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    margin: -10px -10px -20px -10px;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+
+.heberg p
+{
+    margin-top: -10px;
+    font-size: 14px;
+    color: gray;
+}
+
+
+.fa-star
+{
+    color: #0065FC;
+}
+
+
+span .fa-star
+{
+    color: rgb(228, 226, 226);
+}
+
+
+#star
+{
+    margin: -18px;
+    background-color: transparent;
+}
+
+article #afficherplus
+{
+    font-weight: bold;
+    margin: 20px 0px 20px 10px;
+}
+
+
+
+
+/* Partie Les plus populaires */
+
+.populaires
+{
+    background-color: #F2F2F2;
+    padding: 20px;
+    margin: 30px;
+    width: 375px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+.fa-chart-line
+{
+    margin-left: 130px;
+}
+
+
+
+.popu 
+{
+    display: grid;
+    grid-template-columns: 370px;
+    grid-template-rows: 170px 170px 170px;
+}
+
+
+.popu div 
+{
+    background: white;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+.cartepopu 
+{
+    display: grid;
+    grid-template-columns: 180px 180px;
+    grid-template-rows: 55px 55px 55px;
+}
+
+
+.imgcard-popu
+{
+    width: 130px;
+    height: 150px;
+    object-fit: cover;
+    margin: -10px -10px -20px -10px;
+    border-radius: 10px 0px 0px 10px;
+    grid-row: 1/2;
+}
+
+
+.cartepopu h4
+{
+    grid-column-start: 2;
+    margin: 0px 20px 0px 0px;
+}
+
+
+.cartepopu p
+{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.cartepopu #star
+{
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+
+
+
+
+
+
+
+
