@@ -30,6 +30,7 @@ body
     background-position: 50px 30px;
     margin: 20px 30px 20px 30px; 
     font-family: Relaway , Arial, Helvetica, sans-serif;
+    width: 1400px;
 
 }
 
@@ -378,7 +379,7 @@ header #sinscrire
 
 
 
-/* Partie info avec la bulle info de la Section 2*/
+/* Partie info avec la bulle info de la Section 1*/
 
 #section1 #info
 {
@@ -421,6 +422,18 @@ header #sinscrire
 
 /* Section 2*/
 
+#section2
+{
+  display: flex;
+}
+
+.card
+{
+    box-shadow: 4px 4px 8px 0px rgb(201, 199, 199);
+}
+
+
+
 /* Partie hebergements */
 
 
@@ -448,6 +461,11 @@ header #sinscrire
     margin: 5px;
     padding: 15px;
     border-radius: 10px 10px 10px 10px;
+}
+
+.card
+{
+    box-shadow: 4px 4px 8px 0px rgb(201, 199, 199);
 }
 
 
@@ -538,6 +556,7 @@ article #afficherplus
     display: grid;
     grid-template-columns: 180px 180px;
     grid-template-rows: 55px 55px 55px;
+    box-shadow: 4px 4px 8px 0px rgb(201, 199, 199);
 }
 
 
