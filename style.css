@@ -23,16 +23,21 @@
 }
 
 
+
+
 body
 {
     background-image: url(images/Logo.svg);
     background-repeat: no-repeat;
     background-position: 50px 30px;
     font-family: Relaway , Arial, Helvetica, sans-serif;
-    width: auto;
+    width: 1300px;
     height: auto;
-
 }
+
+
+
+
 
 
 
@@ -46,11 +51,13 @@ margin-right: 10px;
 }
 
 
+
 header nav ul
 {
     display: flex;
     list-style: none;
 }
+
 
 
 header nav li
@@ -59,10 +66,12 @@ margin-left: 80px;
 }
 
 
+
 header a:link
 {
     text-decoration: none;
 }
+
 
 
 header a:hover
@@ -72,16 +81,19 @@ header a:hover
 }
 
 
+
 header #hebergements
 {
     color:#0065FC;
 }
 
 
+
 header #activites
 {
     color: gray;
 }
+
 
 
 header #sinscrire
@@ -94,12 +106,16 @@ header #sinscrire
 
 
 
+
+
+
+
+
 /* Section 1*/
 
 #section1 h2
 {
-    margin: 60px 0px 0px 45px;
-    
+    margin: 60px 0px 0px 45px;   
 }
 
 
@@ -114,7 +130,7 @@ header #sinscrire
 
 
 
-/* Partie formulaire de la Section 2*/
+/* Partie formulaire de la Section 1*/
 
 #section1 #formulaire
 {
@@ -126,8 +142,7 @@ header #sinscrire
     justify-content: space-between;
     width: 32%;
     height: 40px;
-    margin: 30px 0px 40px 45px;
-    
+    margin: 30px 0px 40px 45px;   
 }
 
 
@@ -136,8 +151,7 @@ header #sinscrire
 {
     background-color: #F2F2F2;
     width: 50px;  
-    border-radius: 10px 0px 0px 10px;
-     
+    border-radius: 10px 0px 0px 10px; 
 }
 
 
@@ -167,8 +181,9 @@ header #sinscrire
     padding-left: 15px;
     height: 40px;
     border-radius: 0px 10px 10px 0px;
-
 }
+
+
 
 #section1 input[type=button] 
 {
@@ -191,6 +206,7 @@ header #sinscrire
 }
 
 
+
 #section1 .filtremot
 {
     margin-top: 8px;
@@ -199,6 +215,10 @@ header #sinscrire
 }
 
 
+
+
+
+/*Filtre economique */
 
 #section1 .economique
 {
@@ -214,32 +234,34 @@ header #sinscrire
 }
 
 
-.economique:hover
+
+#section1 .economique:hover
 {
     background-color: #F2F2F2;
 }
 
 
+
 #section1 .fa-money-bill-wave
 {
     color: #0065FC; 
-    
 }
+
 
 
 #section1 .bulle-economique .icon-background
 {
     color: #DEEBFF;
     margin-top: -1px;
-    
 }
+
 
 
 #section1 .bulle-economique
 {
-    margin-left: -10px;
-    
+    margin-left: -10px;  
 }
+
 
 
 #section1 .moteconomique
@@ -250,6 +272,9 @@ header #sinscrire
 
 
 
+
+
+/* Filtre familial */
 
 #section1 .familial
 {
@@ -265,32 +290,31 @@ header #sinscrire
 }
 
 
-.familial:hover
+#section1 .familial:hover
 {
     background-color: #F2F2F2;
 }
 
 
+
 #section1 .fa-child
 {
     color: #0065FC; 
-    
-  
 }
+
 
 
 #section1 .bulle-familial .icon-background
 {
     color: #DEEBFF;
-    margin-top: -1px;
-    
+    margin-top: -1px;  
 }
+
 
 
 #section1 .bulle-familial
 {
-    margin-left: -10px;
-    
+    margin-left: -10px;    
 }
 
 
@@ -303,6 +327,9 @@ header #sinscrire
 
 
 
+
+
+/* Filtre romantique */
 
 #section1 .romantique
 {
@@ -318,33 +345,34 @@ header #sinscrire
 }
 
 
-.romantique:hover
+
+#section1 .romantique:hover
 {
     background-color: #F2F2F2;
 }
 
 
+
 #section1 .fa-heart
 {
     color: #0065FC; 
-    
-  
 }
+
 
 
 #section1 .bulle-romantique .icon-background
 {
     color: #DEEBFF;
-    margin-top: -1px;
-    
+    margin-top: -1px;   
 }
+
 
 
 #section1 .bulle-romantique
 {
-    margin-left: -10px;
-    
+    margin-left: -10px;  
 }
+
 
 
 #section1 .motromantique
@@ -355,6 +383,9 @@ header #sinscrire
 
 
 
+
+
+/* Filtre animaux autorises */
 
 #section1 .animauxautorise
 {
@@ -369,33 +400,35 @@ header #sinscrire
     height: 40px;
 }
 
-.animauxautorise:hover
+
+
+#section1 .animauxautorise:hover
 {
     background-color: #F2F2F2;
 }
 
 
+
 #section1 .fa-dog
 {
     color: #0065FC; 
-    
-  
 }
+
 
 
 #section1 .bulle-animaux .icon-background
 {
     color: #DEEBFF;
-    margin-top: -1px;
-    
+    margin-top: -1px;   
 }
+
 
 
 #section1 .bulle-animaux
 {
-    margin-left: -10px;
-    
+    margin-left: -10px; 
 }
+
 
 
 #section1 .motanimaux
@@ -407,7 +440,8 @@ header #sinscrire
 
 
 
-/* Partie info avec la bulle info de la Section 1*/
+
+/* Partie info avec la bulle info de la Section 1 */
 
 #section1 #info
 {
@@ -416,11 +450,14 @@ header #sinscrire
 }
 
 
+
 #section1 .bulle-info
 {
     margin-right: -20px;
     margin-top: 5px;
 }
+
+
 
 #section1 .fa-info
 {
@@ -428,6 +465,7 @@ header #sinscrire
     padding-left: 3px;
     padding-top: 3px;
 }
+
 
 
 #section1 .bulle-info .icon-background
@@ -438,8 +476,7 @@ header #sinscrire
     border-color: #F2F2F2;
     border-image: initial;
     border-radius: 50%; 
-    padding: 3px 1px 3px 1px;
-    
+    padding: 3px 1px 3px 1px; 
 }
 
 
@@ -449,19 +486,23 @@ header #sinscrire
 
 
 
+
+
 /* Section 2*/
 
 #section2
 {
   display: flex;
-  justify-content: center;
-  margin-left: 60px;
+  margin-left: 20px;
 }
 
-.card
+
+
+#section2 .card
 {
     box-shadow: 4px 4px 8px 0px rgb(201, 199, 199);
 }
+
 
 
 #section2 a:link
@@ -472,36 +513,40 @@ header #sinscrire
 
 
 
-/* Partie hebergements */
 
 
-.hebergements
+/* Partie hebergements de la Section 2 */
+
+#section2 .hebergements
 {
     background-color: #F2F2F2;
-    padding: 20px 80px 20px 20px;
-    margin: 30px 60px 30px 30px;
+    padding: 20px 40px 20px 10px;
+    margin: 30px 30px 30px 30px;
     width: 800px;
     border-radius: 20px 20px 20px 20px;
 }
 
 
-#ancre_hebergements
+
+#section2 #ancre_hebergements
 {
     margin-left: 40px;
 }
 
 
-.heberg 
+
+#section2 .heberg 
 {
     display: grid;
     grid-template-columns: 240px 240px 240px;
     grid-template-rows: 200px 200px;
     grid-gap: 10px;
     margin-left: 35px;
-
 }
 
-.heberg .card 
+
+
+#section2 .heberg .card 
 {
     background: white;
     margin: 5px;
@@ -512,18 +557,19 @@ header #sinscrire
 }
 
 
-.imgcard-heberg
+
+#section2 .imgcard-heberg
 {
     width: 220px;
     height: 100px;
     object-fit: cover;
     margin: -10px -10px -20px -10px;
-    border-radius: 10px 10px 0px 0px;
-    
+    border-radius: 10px 10px 0px 0px; 
 }
 
 
-.heberg p
+
+#section2 .heberg p
 {
     margin-top: -10px;
     font-size: 14px;
@@ -531,44 +577,42 @@ header #sinscrire
 }
 
 
-.etoiles
-{
-    
-}
 
-
-.fa-star
+#section2 .fa-star
 {
     color: #0065FC;
 }
 
 
-span .fa-star
+
+#section2 span .fa-star
 {
     color: rgb(228, 226, 226);
 }
 
 
-.etoiles
+
+#section2 .etoiles
 {
     margin: -5px 0px 0px -2px;
 }
 
 
 
-article #afficherplus
+#section2 article #afficherplus
 {
     font-weight: bold;
     font-size: 18px;
-    margin: 40px 0px 30px 30px;
+    margin: 40px 0px 30px 40px;
 }
+
 
 
 
 
 /* Partie Les plus populaires */
 
-.populaires
+#section2 .populaires
 {
     background-color: #F2F2F2;
     padding: 20px 37px 20px 37px;
@@ -578,14 +622,15 @@ article #afficherplus
 }
 
 
-.fa-chart-line
+
+#section2 .fa-chart-line
 {
     margin-left: 120px;
 }
 
 
 
-.popu 
+#section2 .popu 
 {
     display: grid;
     grid-template-columns: 360px;
@@ -594,7 +639,8 @@ article #afficherplus
 }
 
 
-.cartepopu 
+
+#section2 .cartepopu 
 {
     display: grid;
     grid-template-columns: 140px 180px;
@@ -608,7 +654,8 @@ article #afficherplus
 }
 
 
-.imgcard-popu
+
+#section2 .imgcard-popu
 {
     width: 130px;
     height: 130px;
@@ -619,14 +666,16 @@ article #afficherplus
 }
 
 
-.cartepopu h4
+
+#section2 .cartepopu h4
 {
     grid-column-start: 2;
     margin: 0px 20px 0px 0px;
 }
 
 
-.cartepopu p
+
+#section2 .cartepopu p
 {
     grid-column-start: 2;
     grid-row-start: 2;
@@ -635,11 +684,14 @@ article #afficherplus
     margin-top: -5px;
 }
 
-.cartepopu .etoilespopu
+#section2 .cartepopu .etoilespopu
 {
     grid-column-start: 2;
     grid-row-start: 3;
 }
+
+
+
 
 
 
@@ -652,23 +704,26 @@ article #afficherplus
 #section3
 {
     height: 600px;
-    display: flex;
-    justify-content: center;
 }
 
 
-#ancre_activites
+
+#section3 #ancre_activites
 {
-    margin-left: 10px;
+    margin-left: 55px;
 }
 
-.activ
+
+
+#section3 .activ
 {
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
     grid-template-rows: 260px 180px;
     grid-gap: 40px;
+    margin-left: 55px;
 }
+
 
 
 #section3 a:link
@@ -678,122 +733,141 @@ article #afficherplus
 }
 
 
-.carteactiv
+
+#section3 .carteactiv
 {
     border-radius: 20px 20px 20px 20px;
     box-shadow: 4px 4px 8px 0px rgb(201, 199, 199);
 }
 
 
-.activ h4
+
+#section3 .activ h4
 {
     margin: 10px 0px 20px 20px;
     padding-bottom: 20px;
 }
 
 
-.activ #vieuxport
+
+#section3 .activ #vieuxport
 {
     grid-column-start: 1;
     grid-row: 1/3;
-    width: 300px;
+    width: 275px;
     height: 470px;
 }
 
 
-.activ #img-vieuxport
+
+#section3 .activ #img-vieuxport
 {
-    width: 300px;
+    width: 275px;
     height: 410px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
 
-.activ #fortpomegues
+
+#section3 .activ #fortpomegues
 {
     grid-column-start: 2;
     grid-row-start: 1;
-    width: 300px;
+    width: 275px;
 }
 
 
-.activ #img-fortpomegues
+
+#section3 .activ #img-fortpomegues
 {
-    width: 300px;
+    width: 275px;
     height: 200px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
 
-.activ #ilesfrioul
+
+#section3 .activ #ilesfrioul
 {
     grid-column-start: 2;
     grid-row-start: 2;
+    width: 275px;
 }
 
 
-.activ #img-ilesfrioul
+
+#section3 .activ #img-ilesfrioul
 {
-    width: 300px;
+    width: 275px;
     height: 110px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
 
-.activ #calanques
+
+#section3 .activ #calanques
 {
     grid-column-start: 3;
     grid-row: 1/3;
-    width: 300px;
+    width: 275px;
     height: 470px;
 }
 
 
-.activ #img-calanques
+
+#section3 .activ #img-calanques
 {
-    width: 300px;
+    width: 275px;
     height: 410px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
 
-.activ #notredame
+
+#section3 .activ #notredame
 {
     grid-column-start: 4;
     grid-row-start: 1;
+    width: 275px;
 }
 
 
-.activ #img-notredame
+
+#section3 .activ #img-notredame
 {
-    width: 300px;
+    width: 275px;
     height: 150px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
 
-.activ #parclongchamp
+
+#section3 .activ #parclongchamp
 {
     grid-column-start: 4;
     grid-row-start: 2;
-    width: 300px;
+    width: 275px;
     margin-top: -50px;
-
 }
 
 
-.activ #img-parclongchamp
+
+#section3 .activ #img-parclongchamp
 {
-    width: 300px;
+    width: 275px;
     height: 160px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
+
+
+
+
 
 
 
@@ -808,7 +882,12 @@ article #afficherplus
     display: grid;
     grid-template-columns: 450px 450px 450px;
     grid-template-rows: 300px;
+    width: auto;
+    margin-left: -10px;
+    margin-right: -130px;
 }
+
+
 
 #footer .apropos
 {
@@ -816,17 +895,23 @@ article #afficherplus
     margin: 30px 0px 0px 60px;
 }
 
+
+
 #footer .noshebergements
 {
     grid-column-start: 2;
     margin: 30px 0px 0px 60px;
 }
 
+
+
 #footer .assistance
 {
     grid-column-start: 3;
     margin: 30px 0px 0px 60px;
+    
 }
+
 
 
 #footer .assistance a:link
