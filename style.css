@@ -28,9 +28,9 @@ body
     background-image: url(images/Logo.svg);
     background-repeat: no-repeat;
     background-position: 50px 30px;
-    margin: 20px 30px 20px 30px; 
+    margin: 60px; 
     font-family: Relaway , Arial, Helvetica, sans-serif;
-    width: 1400px;
+    width: auto;
 
 }
 
@@ -42,6 +42,7 @@ header nav
 {
 display: flex;
 justify-content: flex-end;
+margin-right: 10px;
 }
 
 
@@ -178,7 +179,7 @@ header #sinscrire
 
 
 
-/* Partie des filtres de la Section 2*/
+/* Partie des filtres de la Section 1*/
 
 #section1 #filtres
 {
@@ -212,17 +213,23 @@ header #sinscrire
 }
 
 
+.economique:hover
+{
+    background-color: #F2F2F2;
+}
+
+
 #section1 .fa-money-bill-wave
 {
     color: #0065FC; 
     
-  
 }
 
 
 #section1 .bulle-economique .icon-background
 {
     color: #DEEBFF;
+    margin-top: -1px;
     
 }
 
@@ -257,6 +264,12 @@ header #sinscrire
 }
 
 
+.familial:hover
+{
+    background-color: #F2F2F2;
+}
+
+
 #section1 .fa-child
 {
     color: #0065FC; 
@@ -268,6 +281,7 @@ header #sinscrire
 #section1 .bulle-familial .icon-background
 {
     color: #DEEBFF;
+    margin-top: -1px;
     
 }
 
@@ -303,6 +317,12 @@ header #sinscrire
 }
 
 
+.romantique:hover
+{
+    background-color: #F2F2F2;
+}
+
+
 #section1 .fa-heart
 {
     color: #0065FC; 
@@ -314,6 +334,7 @@ header #sinscrire
 #section1 .bulle-romantique .icon-background
 {
     color: #DEEBFF;
+    margin-top: -1px;
     
 }
 
@@ -347,6 +368,11 @@ header #sinscrire
     height: 40px;
 }
 
+.animauxautorise:hover
+{
+    background-color: #F2F2F2;
+}
+
 
 #section1 .fa-dog
 {
@@ -359,6 +385,7 @@ header #sinscrire
 #section1 .bulle-animaux .icon-background
 {
     color: #DEEBFF;
+    margin-top: -1px;
     
 }
 
@@ -410,7 +437,7 @@ header #sinscrire
     border-image: initial;
     border-radius: 50%; 
     padding: 3px 1px 3px 1px;
-
+    
 }
 
 
@@ -433,6 +460,13 @@ header #sinscrire
 }
 
 
+#section2 a:link
+{
+    text-decoration: none;
+    color: black;
+}
+
+
 
 /* Partie hebergements */
 
@@ -440,38 +474,43 @@ header #sinscrire
 .hebergements
 {
     background-color: #F2F2F2;
-    padding: 20px;
-    margin: 30px;
-    width: 660px;
+    padding: 20px 80px 20px 20px;
+    margin: 30px 30px 30px 0px;
+    width: 800px;
     border-radius: 20px 20px 20px 20px;
+}
+
+
+#ancre_hebergements
+{
+    margin-left: 40px;
 }
 
 
 .heberg 
 {
     display: grid;
-    grid-template-columns: 220px 220px 220px;
+    grid-template-columns: 240px 240px 240px;
     grid-template-rows: 200px 200px;
+    grid-gap: 10px;
+    margin-left: 35px;
 
 }
 
-.heberg div 
+.heberg .card 
 {
     background: white;
     margin: 5px;
-    padding: 15px;
+    padding: 15px 15px 5px 15px;
     border-radius: 10px 10px 10px 10px;
-}
-
-.card
-{
     box-shadow: 4px 4px 8px 0px rgb(201, 199, 199);
+    width: 200px;
 }
 
 
 .imgcard-heberg
 {
-    width: 200px;
+    width: 220px;
     height: 100px;
     object-fit: cover;
     margin: -10px -10px -20px -10px;
@@ -488,6 +527,12 @@ header #sinscrire
 }
 
 
+.etoiles
+{
+    
+}
+
+
 .fa-star
 {
     color: #0065FC;
@@ -500,16 +545,18 @@ span .fa-star
 }
 
 
-#star
+.etoiles
 {
-    margin: -18px;
-    background-color: transparent;
+    margin: -5px 0px 0px -2px;
 }
+
+
 
 article #afficherplus
 {
     font-weight: bold;
-    margin: 20px 0px 20px 10px;
+    font-size: 18px;
+    margin: 40px 0px 30px 30px;
 }
 
 
@@ -520,8 +567,8 @@ article #afficherplus
 .populaires
 {
     background-color: #F2F2F2;
-    padding: 20px;
-    margin: 30px;
+    padding: 20px 37px 20px 37px;
+    margin: 30px 0px 30px 30px;
     width: 375px;
     border-radius: 20px 20px 20px 20px;
 }
@@ -529,7 +576,7 @@ article #afficherplus
 
 .fa-chart-line
 {
-    margin-left: 130px;
+    margin-left: 120px;
 }
 
 
@@ -537,33 +584,30 @@ article #afficherplus
 .popu 
 {
     display: grid;
-    grid-template-columns: 370px;
-    grid-template-rows: 170px 170px 170px;
-}
-
-
-.popu div 
-{
-    background: white;
-    margin: 5px;
-    padding: 15px;
-    border-radius: 10px 10px 10px 10px;
+    grid-template-columns: 360px;
+    grid-template-rows: 107px 107px 107px;
+    grid-gap: 60px;
 }
 
 
 .cartepopu 
 {
     display: grid;
-    grid-template-columns: 180px 180px;
-    grid-template-rows: 55px 55px 55px;
+    grid-template-columns: 140px 180px;
+    grid-template-rows: 45px 45px 45px;
     box-shadow: 4px 4px 8px 0px rgb(201, 199, 199);
+    background: white;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 10px 10px 10px 10px;
+    height: 110px;
 }
 
 
 .imgcard-popu
 {
     width: 130px;
-    height: 150px;
+    height: 130px;
     object-fit: cover;
     margin: -10px -10px -20px -10px;
     border-radius: 10px 0px 0px 10px;
@@ -582,9 +626,12 @@ article #afficherplus
 {
     grid-column-start: 2;
     grid-row-start: 2;
+    color: gray;
+    font-size: 14px;
+    margin-top: -5px;
 }
 
-.cartepopu #star
+.cartepopu .etoilespopu
 {
     grid-column-start: 2;
     grid-row-start: 3;
