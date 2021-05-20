@@ -76,8 +76,8 @@ header a:link
 
 header a:hover
 {
-   text-decoration: overline #0065FC; 
-   padding-bottom: 40px;
+    border-top: #0065FC solid ;
+    padding-top: 20px;
 }
 
 
@@ -85,6 +85,8 @@ header a:hover
 header #hebergements
 {
     color:#0065FC;
+    border-top: #0065FC solid ;
+    padding-top: 20px;
 }
 
 
@@ -919,6 +921,14 @@ header #sinscrire
     text-decoration: none;
     color: black;
 }
+
+
+
+
+
+
+
+
 
 
 
