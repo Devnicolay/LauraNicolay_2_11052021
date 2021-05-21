@@ -947,13 +947,6 @@ header #sinscrire
     }
 
 
-
-    
-
-
-
-
-
 }
 
 
@@ -976,7 +969,6 @@ header #sinscrire
 
     header nav
     {
-        
         border-bottom: #F2F2F2 solid;
         padding-bottom: 10px;
         width: 400px;
@@ -984,7 +976,6 @@ header #sinscrire
         display: flex;
         flex-direction: column;
     }
-
 
 
 
@@ -1008,6 +999,7 @@ header #sinscrire
         margin-top: 25px;
         margin-left: -30px;
     }
+
 
 
     header #hebergements
@@ -1051,6 +1043,7 @@ header #sinscrire
     }
     
     
+
     #section1 #bouton
     {
         display: none;
@@ -1146,7 +1139,6 @@ header #sinscrire
         margin-left: 40px;
     }
 
-
     
 
 
@@ -1238,6 +1230,7 @@ header #sinscrire
     { 
         display: flex;
         flex-direction: column;
+        align-content: space-between;
     }
 
 
@@ -1254,6 +1247,7 @@ header #sinscrire
     {
         width: 340px;
         height: auto;
+        margin-bottom: -20px;
     }
 
 
@@ -1270,6 +1264,7 @@ header #sinscrire
     {
         width: 340px;
         height: auto;
+        margin-bottom: -20px;
     }
 
 
@@ -1286,6 +1281,7 @@ header #sinscrire
     {
         width: 340px;
         height: auto;
+        margin-bottom: -20px;
     }
 
 
@@ -1302,6 +1298,7 @@ header #sinscrire
     {
         width: 340px;
         height: auto;
+        margin-bottom: -20px;
     }
 
 
@@ -1318,6 +1315,7 @@ header #sinscrire
     {
         width: 340px;
         height: auto;
+        margin-bottom: 30px;
     }
 
 
@@ -1349,13 +1347,17 @@ header #sinscrire
 
 
 
+
+
+
+
     /* Footer */
 
     #footer
     {
         display: flex;
         flex-direction: column;
-        margin-top: 850px;
+        margin-top: 800px;
         height: 520px;
         width: 400px;
     }
