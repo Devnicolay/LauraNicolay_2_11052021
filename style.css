@@ -433,9 +433,8 @@ header #sinscrire
     color: black;
     font-weight: bold;
     font-size: 1.1em;
-    margin-left: 40px;
     display: block;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 
@@ -1010,12 +1009,19 @@ footer a:visited
         padding-right: 25px;
         border-radius: 0px;
     }
-    
 
 
-    #section2 .fa-chart-line
+
+    #section2 .cartepopu h3
     {
-        margin-left: 110px;
+        margin-right: 0px;
+    }
+
+
+
+    #section2 .cartepopu p
+    {
+        margin-top: 10px;
     }
 
 
@@ -1024,7 +1030,15 @@ footer a:visited
     {
         background-color: white;
         width: auto;
-        margin: 30px -30px -20px -60px;
+        margin: 30px 0px -20px 0px;
+        padding-right: 30px;
+    }
+
+
+
+    #section2 #ancre_hebergements
+    {
+        margin-left: 0px;
     }
 
 
@@ -1033,8 +1047,15 @@ footer a:visited
     {
         display: flex;
         flex-direction: column;
+        margin-left: 0px;
     }
 
+
+
+    #section2 #afficherplus
+    {
+        margin-bottom: 30px;
+    }
 
 
 
@@ -1051,6 +1072,7 @@ footer a:visited
         display: flex;
         flex-direction: column;
         align-content: space-between;
+        margin-left: 40px;
     }
 
 
