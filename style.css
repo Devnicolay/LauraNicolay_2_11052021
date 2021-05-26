@@ -21,6 +21,14 @@ body
     background-repeat: no-repeat;
     background-position: 50px 30px;
     font-family: Relaway , Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+
+
+body h1
+{
+    display: none;
 }
 
 
@@ -51,6 +59,7 @@ header nav ul
 {
     display: flex;
     list-style: none;
+    margin-right: 100px;
 }
 
 
@@ -97,6 +106,7 @@ header #sinscrire
 {
     color:#0065FC;
     font-weight: bold;
+    margin: 15px 40px 0px -20px;
 }
 
 
@@ -204,11 +214,7 @@ header #sinscrire
 
 
 
-
-
-/*Filtre economique */
-
-#section1 .economique
+#section1 .bulles
 {
     border-style: solid;
     border-width: 2px;
@@ -217,28 +223,27 @@ header #sinscrire
     display: flex;
     justify-content: flex-start;
     font-weight: bold;
-    width: 16%;
     height: 40px;
     margin-left: 3em;
 }
 
 
 
-#section1 .economique:hover
+#section1 .bulles:hover
 {
     background-color: #F2F2F2;
 }
 
 
 
-#section1 .fa-money-bill-wave
+#section1 span
 {
     color: #0065FC; 
 }
 
 
 
-#section1 .bulle-economique .icon-background
+#section1 .bulle .icon-background
 {
     color: #DEEBFF;
     margin-top: -1px;
@@ -246,187 +251,17 @@ header #sinscrire
 
 
 
-#section1 .bulle-economique
+#section1 .bulle
 {
     margin-left: -10px;  
 }
 
 
 
-#section1 .moteconomique
+#section1 p span
 {
-    padding-top: 10px;
-    padding-left: 10px;
-}
-
-
-
-
-
-/* Filtre familial */
-
-#section1 .familial
-{
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 40px 40px 40px 40px;
-    border-color: #F2F2F2;
-    display: flex;
-    justify-content: flex-start;
-    font-weight: bold;
-    width: 12%; 
-    height: 40px;
-    margin-left: 3em;
-}
-
-
-#section1 .familial:hover
-{
-    background-color: #F2F2F2;
-}
-
-
-
-#section1 .fa-child
-{
-    color: #0065FC; 
-}
-
-
-
-#section1 .bulle-familial .icon-background
-{
-    color: #DEEBFF;
-    margin-top: -1px;  
-}
-
-
-
-#section1 .bulle-familial
-{
-    margin-left: -10px;    
-}
-
-
-
-#section1 .motfamilial
-{
-    padding-top: 10px;
-    padding-left: 10px;
-}
-
-
-
-
-
-/* Filtre romantique */
-
-#section1 .romantique
-{
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 40px 40px 40px 40px;
-    border-color: #F2F2F2;
-    display: flex;
-    justify-content: flex-start;
-    font-weight: bold;
-    width: 15%;  
-    height: 40px; 
-    margin-left: 3em;
-}
-
-
-
-#section1 .romantique:hover
-{
-    background-color: #F2F2F2;
-}
-
-
-
-#section1 .fa-heart
-{
-    color: #0065FC; 
-}
-
-
-
-#section1 .bulle-romantique .icon-background
-{
-    color: #DEEBFF;
-    margin-top: -1px;   
-}
-
-
-
-#section1 .bulle-romantique
-{
-    margin-left: -10px;  
-}
-
-
-
-#section1 .motromantique
-{
-    padding-top: 10px;
-    padding-left: 10px;
-}
-
-
-
-
-
-/* Filtre animaux autorises */
-
-#section1 .animauxautorise
-{
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 40px 40px 40px 40px;
-    border-color: #F2F2F2;
-    display: flex;
-    justify-content: flex-start;
-    font-weight: bold;
-    width: 20%;
-    height: 40px;
-    margin-left: 3em;
-}
-
-
-
-#section1 .animauxautorise:hover
-{
-    background-color: #F2F2F2;
-}
-
-
-
-#section1 .fa-dog
-{
-    color: #0065FC; 
-}
-
-
-
-#section1 .bulle-animaux .icon-background
-{
-    color: #DEEBFF;
-    margin-top: -1px;   
-}
-
-
-
-#section1 .bulle-animaux
-{
-    margin-left: -10px; 
-}
-
-
-
-#section1 .motanimaux
-{
-    padding-top: 10px;
-    padding-left: 10px;
+    display: block; 
+    margin: -5px 20px 0px -30px;
 }
 
 
@@ -544,20 +379,19 @@ header #sinscrire
 {
     background: white;
     margin: 5px;
-    padding: 16px 15px 5px 17px;
+    padding: 16px 8px 5px 8px;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 4px 4px 8px 0px rgb(201, 199, 199);
-    width: 84%;
 }
 
 
 
-#section2 .imgcard-heberg
+#section2 .heberg img
 {
-    width: 109%;
+    width: 100%;
     height: 100px;
     object-fit: cover;
-    margin: -10px -10px -20px -10px;
+    margin: -10px 0px -10px 0px;
     border-radius: 10px 10px 0px 0px; 
 }
 
@@ -600,7 +434,8 @@ header #sinscrire
     font-weight: bold;
     font-size: 1.1em;
     margin-left: 40px;
-    
+    display: block;
+    margin-top: 60px;
 }
 
 
@@ -620,9 +455,10 @@ header #sinscrire
 
 
 
-#section2 .fa-chart-line
+#section2 .populaires h2
 {
-    margin-left: 120px;
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -652,7 +488,7 @@ header #sinscrire
 
 
 
-#section2 .imgcard-popu
+#section2 .cartepopu img
 {
     width: 100%;
     height: 285%;
@@ -718,7 +554,7 @@ header #sinscrire
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 40px;
-    margin-left: 55px;
+    margin: 0px 40px 0px 55px;
 }
 
 
@@ -752,7 +588,6 @@ header #sinscrire
 {
     grid-column-start: 1;
     grid-row: 1/3;
-    width: 88%;
 }
 
 
@@ -771,7 +606,6 @@ header #sinscrire
 {
     grid-column-start: 2;
     grid-row-start: 1;
-    width: 88%;
 }
 
 
@@ -790,7 +624,6 @@ header #sinscrire
 {
     grid-column-start: 2;
     grid-row-start: 2;
-    width: 88%;
 }
 
 
@@ -809,7 +642,6 @@ header #sinscrire
 {
     grid-column-start: 3;
     grid-row: 1/3;
-    width: 88%;
 }
 
 
@@ -828,7 +660,6 @@ header #sinscrire
 {
     grid-column-start: 4;
     grid-row-start: 1;
-    width: 88%;
 }
 
 
@@ -847,7 +678,6 @@ header #sinscrire
 {
     grid-column-start: 4;
     grid-row-start: 2;
-    width: 88%;
     margin-top: -50px;
 }
 
@@ -876,7 +706,7 @@ footer
 {
     background-color: #F2F2F2;
     display: flex;
-    width: 100%;
+    
     padding-left: 20px;
 }
 
@@ -943,7 +773,7 @@ footer a:visited
 
 
 
-
+/* Pour desktop */
 @media screen and (min-width: 1024px) 
 {
 
@@ -957,7 +787,9 @@ footer a:visited
 
 
 
-@media screen and (min-width: 600px)
+
+
+@media screen and (min-width: 768px)
 {
 
     #section1 .fa-search
@@ -971,13 +803,15 @@ footer a:visited
 
 
 
-@media screen and (max-width: 600px) 
+/* Pour mobiles */
+@media screen and (max-width: 768px) 
 {
     
     body
     {
-        width: auto;
+        height: auto;
     }
+
 
 
 
@@ -985,35 +819,39 @@ footer a:visited
 
     /* Header */
 
-    header nav
+    header 
     {
         border-bottom: #F2F2F2 solid;
-        padding-bottom: 10px;
-        width: 114%;
-        margin-left: -10px;
+        height: 175px;
+        margin: -40px 0px 0px -10px;
+    }
+
+
+
+    header nav
+    {
+        padding-bottom: 100px;
         display: flex;
         flex-direction: column;
     }
 
 
 
+    header ul
+    {
+        display: inline-block;
+    }
+
     ul li:nth-child(1)
     {
-        margin: 100px 0px 0px 25px;
+        margin: 100px 0px 0px -27px;
     }
 
 
 
     ul li:nth-child(2)
     {
-        margin-top: 100px;
-    }
-
-
-
-    ul li:nth-child(3)
-    {
-        margin: 25px 0px 0px -30px;
+        margin: 120px 0px 0px 160px;
     }
 
 
@@ -1022,7 +860,10 @@ footer a:visited
     {
         border-top: transparent;
         border-bottom: #0065FC solid;
-        padding-bottom: 26px;
+        padding-bottom: 20px;
+        display: inline-block;
+        width: 170%;
+        text-align: center;
     }
 
 
@@ -1030,6 +871,13 @@ footer a:visited
     header #activites 
     {
         border-top: transparent;
+    }
+
+
+
+    header #sinscrire
+    {
+        margin: -115px 0px 0px 310px;
     }
 
 
@@ -1078,7 +926,7 @@ footer a:visited
 
     #section1 #formulaire
     {
-        width: 95%;
+        width: 90%;
         margin: 30px 0px 20px 10px;
     }
 
@@ -1086,59 +934,37 @@ footer a:visited
 
     #section1 #filtres
     {
-        display: grid;
+        display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        margin-left: 50px;
+        margin-left: 0px;
     }
 
 
 
     #section1 .filtremot
     {
-        margin: 10px 0px 20px -35px;
-        grid-column-start: 1;
-        grid-row-start: 1;
+        margin: 10px 100px 20px 20px;
     }
 
 
 
-    #section1 .economique
+    #section1 .bulle
     {
         margin: 0px 0px 20px -35px;
-        grid-column-start: 1;
-        grid-row-start: 2;
-        width: 110%;
+    }
+
+
+    #section1 .bulles
+    {
+        margin: 10px 0px 0px 20px;
+        padding-left: 1.7em;
     }
 
 
 
-    #section1 .familial
+    #section1 p span
     {
-        margin: 0px 0px 20px -35px;
-        grid-column-start: 2;
-        grid-row-start: 2;
-        width: 170%;
-    }
-
-
-
-    #section1 .romantique
-    {
-        margin: 0px 0px 20px -35px;
-        grid-column-start: 1;
-        grid-row-start: 3;
-        width: 105%;
-    }
-
-
-
-    #section1 .animauxautorise
-    {
-        margin: 0px 0px 20px -35px;
-        grid-column-start: 1;
-        grid-row-start: 4;
-        width: 135%;
+        margin-left: 10px;
     }
 
 
@@ -1179,9 +1005,9 @@ footer a:visited
 
     #section2 .populaires
     {
-        width: 109%;
-        padding: 0px 20px 20px 20px;
-        margin: 30px -30px -10px -30px;
+        width: 90%;
+        margin: 30px 0px -10px -28px;
+        padding-right: 25px;
         border-radius: 0px;
     }
     
@@ -1197,8 +1023,7 @@ footer a:visited
     #section2 .hebergements
     {
         background-color: white;
-        width: auto; 
-        padding: 0px 20px 0px 20px;
+        width: auto;
         margin: 30px -30px -20px -60px;
     }
 
@@ -1208,20 +1033,6 @@ footer a:visited
     {
         display: flex;
         flex-direction: column;
-    }
-
-
-
-    #section2 .imgcard-heberg
-    {
-        width: 106%;
-    }
-
-
-
-    #section2 .heberg .card
-    {
-        width: 92%;
     }
 
 
@@ -1247,14 +1058,13 @@ footer a:visited
     #section3 .activites
     {
         height: auto;
-        margin: 80px 0px 0px -30px;
+        
     }
 
 
 
     #section3 .activ #vieuxport
     {
-        width: 102%;
         height: auto;
         margin-bottom: -20px;
     }
@@ -1263,7 +1073,6 @@ footer a:visited
 
     #section3 .activ #img-vieuxport
     {
-        width: 341px;
         height: 130px;
     }
 
@@ -1271,7 +1080,6 @@ footer a:visited
 
     #section3 .activ #fortpomegues
     {
-        width: 102%;
         height: auto;
         margin-bottom: -20px;
     }
@@ -1280,7 +1088,6 @@ footer a:visited
 
     #section3 .activ #img-fortpomegues
     {
-        width: 341px;
         height: 130px;
     }
 
@@ -1288,7 +1095,6 @@ footer a:visited
 
     #section3 .activ #ilesfrioul
     {
-        width: 102%;
         height: auto;
         margin-bottom: -20px;
     }
@@ -1297,7 +1103,6 @@ footer a:visited
 
     #section3 .activ #img-ilesfrioul
     {
-        width: 341px;
         height: 130px;
     }
 
@@ -1305,7 +1110,6 @@ footer a:visited
 
     #section3 .activ #calanques
     {
-        width: 102%;
         height: auto;
         margin-bottom: -20px;
     }
@@ -1314,7 +1118,6 @@ footer a:visited
 
     #section3 .activ #img-calanques
     {
-        width: 341px;
         height: 130px;
     }
 
@@ -1322,7 +1125,6 @@ footer a:visited
 
     #section3 .activ #notredame
     {
-        width: 102%;
         height: auto;
         margin-bottom: 30px;
     }
@@ -1331,7 +1133,6 @@ footer a:visited
 
     #section3 .activ #img-notredame
     {
-        width: 341px;
         height: 130px;
     }
 
@@ -1339,15 +1140,13 @@ footer a:visited
 
     #section3 .activ #parclongchamp
     {
-        width: 102%;
         height: auto;
     }
 
 
 
     #section3 .activ #img-parclongchamp
-    {
-        width: 341px;
+    {;
         height: 130px;
     }
 
@@ -1367,7 +1166,6 @@ footer a:visited
         display: flex;
         flex-direction: column;
         margin: 800px 0px 0px -10px;
-        width: 103%;
         padding: 0px 20px 20px 20px;
     }
 
@@ -1389,7 +1187,8 @@ footer a:visited
 
     footer ul li:nth-child(2)
     {
-        margin-top: 20px;
+        
+        margin: 20px 0px 0px 0px;
     }
 
 
