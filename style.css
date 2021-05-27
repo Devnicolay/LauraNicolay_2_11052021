@@ -22,6 +22,7 @@ body
     background-position: 50px 30px;
     font-family: Relaway , Arial, Helvetica, sans-serif;
     margin: 0px;
+    max-width: 1450px;
 }
 
 
@@ -37,20 +38,15 @@ body h1
 
 
 
+
+
 /* Header*/
-
-header
-{
-    max-width: 1450px;
-}
-
-
 
 header nav
 {
     display: flex;
     justify-content: flex-end;
-    margin-right: 10px;
+    margin: 30px 10px 0px 0px;
 }
 
 
@@ -78,10 +74,19 @@ header a:link
 
 
 
-header a:hover
+header ul a:hover
 {
     border-top: #0065FC solid ;
     padding-top: 20px;
+}
+
+
+
+header #sinscrire:hover
+{
+    border-top: #0065FC solid ;
+    padding-top: 20px;
+    margin-top: -8px;
 }
 
 
@@ -788,15 +793,366 @@ footer a:visited
 
 
 
-@media screen and (min-width: 768px)
+
+
+
+
+
+@media screen and (min-width: 1450px)
 {
 
+    body
+    {
+        background-position: 6% 30px; 
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* Pour tablettes */
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+
+    /* Section 1 */
+
+    #section1 #formulaire
+    {
+        width: 50%;
+    }
+    
+    
+    
     #section1 .fa-search
     {
         display: none;
     }
 
+
+
+    #section1 .bulles
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    #section1 .fa-info
+    {
+        padding: 7px 10px 8px 12px;
+    }
+
+
+
+    /* Section 2 */
+
+     #section2
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+   
+   
+   
+    #section2 .populaires
+    {
+        width: 85%;
+        margin-left: 30px;
+    }
+   
+   
+   
+    #section2 .cartepopu h3
+    {
+        margin-right: 0px;
+    }
+   
+   
+   
+    #section2 .cartepopu p
+    {
+        margin-top: 10px;
+    }
+   
+   
+   
+    #section2 .hebergements
+    {
+        width: auto;
+    }
+
+
+
+    #section2 .heberg
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+   
+
+
+    #section2 .heberg:nth-child(1)
+    {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+
+
+    #section2 .heberg:nth-child(2)
+    {
+        display: grid;   
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+
+
+    #section2 .heberg:nth-child(3)
+    {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+
+
+
+    #section2 .heberg:nth-child(4)
+    {
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+
+
+    #section2 .heberg:nth-child(5)
+    {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+
+
+    #section2 .heberg:nth-child(5)
+    {
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+   
+   
+
+    #section2 #ancre_hebergements
+    {
+        margin-left: 0px;
+    }
+   
+   
+   
+    #section2 .heberg
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+   
+   
+   
+    #section2 #afficherplus
+    {
+        margin-bottom: 30px;
+    }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    /* Section 3 */
+   
+    #section3 .activ
+    { 
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        margin-left: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 40px;
+    }
+   
+   
+   
+    #section3 .activites
+    {
+        height: auto;   
+    }
+   
+
+   
+    #section3 .activ #vieuxport
+    {
+        height: auto;
+        margin: 0px;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+   
+   
+   
+    #section3 .activ #img-vieuxport
+    {
+        height: 130px;
+    }
+   
+   
+   
+    #section3 .activ #fortpomegues
+    {
+        height: auto;
+        margin: 0px;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+   
+   
+   
+    #section3 .activ #img-fortpomegues
+    {
+        height: 130px;
+    }
+   
+   
+   
+    #section3 .activ #ilesfrioul
+    {
+        height: auto;
+        margin: 0px;
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+   
+   
+   
+    #section3 .activ #img-ilesfrioul
+    {
+        height: 130px;
+    }
+   
+   
+   
+    #section3 .activ #calanques
+    {
+        height: auto;
+        margin: 0px;
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+   
+   
+   
+    #section3 .activ #img-calanques
+    {
+        height: 130px;
+    }
+   
+   
+   
+    #section3 .activ #notredame
+    {
+        height: auto;
+        margin: 0px;
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+   
+   
+   
+    #section3 .activ #img-notredame
+    {
+        height: 130px;
+    }
+   
+   
+   
+    #section3 .activ #parclongchamp
+    {
+        height: auto;
+        margin: 0px;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+   
+   
+   
+    #section3 .activ #img-parclongchamp
+    {
+        height: 130px;
+    }
+   
+       
+   
+   
+   
+   
+   
+   
+   
+   
+    /* Footer */
+   
+    footer
+    {
+        margin: 160px 0px 0px -10px;
+        padding: 0px 20px 20px 20px;
+        display: flex;
+        justify-content: center;
+    }
+   
+   
+   
+    footer ul 
+    {
+        margin: 0px;
+    }
+   
+   
+   
+    footer ul li:nth-child(1)
+    {
+        margin: 30px 100px 0px 0px;
+    }
+   
+   
+   
+    footer ul li:nth-child(2)
+    {
+           
+        margin: 20px 0px 0px 0px;
+    }
+   
+   
+   
+    footer ul li:nth-child(3)
+    {
+        margin: 0px 100px 0px 0px;
+    }
+
+    
 }
+
+
+
+
+
 
 
 
