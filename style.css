@@ -1543,7 +1543,7 @@ footer a:visited
     {
         display: flex;
         flex-direction: column;
-        margin: 800px 0px 0px -10px;
+        margin: 0px 0px 0px -10px;
         padding: 0px 20px 20px 20px;
     }
 
