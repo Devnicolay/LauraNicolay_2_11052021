@@ -817,7 +817,7 @@ footer a:visited
 
 
 /* Pour tablettes */
-@media screen and (min-width: 768px) and (max-width: 1024px)
+@media screen and (min-width: 767px) and (max-width: 1024px)
 {
 
     /* Section 1 */
@@ -862,8 +862,8 @@ footer a:visited
    
     #section2 .populaires
     {
-        width: 85%;
-        margin-left: 30px;
+        width: 82%;
+        margin-left: 20px;
     }
    
    
@@ -884,7 +884,8 @@ footer a:visited
    
     #section2 .hebergements
     {
-        width: auto;
+        width: 85%;
+        margin-left: 20px;
     }
 
 
@@ -950,8 +951,15 @@ footer a:visited
     {
         margin-left: 0px;
     }
+
+
+
+    #section2 #ancre_hebergements h2
+   {
+       margin-left: 27px;
+   }
    
-   
+
    
     #section2 .heberg
     {
@@ -965,6 +973,7 @@ footer a:visited
     #section2 #afficherplus
     {
         margin-bottom: 30px;
+        margin-left: 20px;
     }
    
    
@@ -1111,7 +1120,7 @@ footer a:visited
    
     footer
     {
-        margin: 160px 0px 0px -10px;
+        margin: 30px 0px 0px -10px;
         padding: 0px 20px 20px 20px;
         display: flex;
         justify-content: center;
@@ -1159,7 +1168,7 @@ footer a:visited
 
 
 /* Pour mobiles */
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 767px) 
 {
     
     body
