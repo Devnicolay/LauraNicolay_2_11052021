@@ -17,19 +17,19 @@
 
 body
 {
-    background-image: url(images/Logo.svg);
-    background-repeat: no-repeat;
-    background-position: 50px 30px;
     font-family: Relaway , Arial, Helvetica, sans-serif;
     margin: 0px;
-    max-width: 1450px;
 }
 
 
 
-body h1
+#bloc-page
 {
-    display: none;
+    margin: 0px 50px 0px 50px;
+    background-image: url(images/Logo.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 30px;
+    max-width: 1450px;
 }
 
 
@@ -46,7 +46,7 @@ header nav
 {
     display: flex;
     justify-content: flex-end;
-    margin: 30px 10px 0px 0px;
+    margin: 30px 0px 0px 0px;
 }
 
 
@@ -111,7 +111,7 @@ header #sinscrire
 {
     color:#0065FC;
     font-weight: bold;
-    margin: 15px 40px 0px -20px;
+    margin: 15px 0px 0px -20px;
 }
 
 
@@ -125,18 +125,17 @@ header #sinscrire
 
 /* Section 1*/
 
-#section1 h2
+#recherche_main h1
 {
-    margin: 60px 0px 0px 45px;   
+    margin-top: 60px  
 }
 
 
 
-#section1 p
+#recherche_main p
 {
     color: gray;
     font-size: 1em;
-    margin-left: 45px;
 }
 
 
@@ -144,17 +143,17 @@ header #sinscrire
 
 /* Partie formulaire de la Section 1*/
 
-#section1 #formulaire
+#recherche_main #formulaire
 {
     display: flex;
     justify-content: space-between;
     width: 29%;
-    margin: 30px 0px 40px 45px;   
+    margin: 30px 0px 40px 0px;   
 }
 
 
 
-#section1 .fa-map-marker-alt
+#recherche_main .fa-map-marker-alt
 {
     background-color: #F2F2F2;
     width: 100%;  
@@ -163,7 +162,7 @@ header #sinscrire
 
 
 
-#section1 input[type=search] 
+#recherche_main input[type=search] 
 {
       
     width: 100%;  
@@ -175,7 +174,7 @@ header #sinscrire
 
 
 
-#section1 #bouton
+#recherche_main #bouton
 {
     background-color: #0065FC;
     color: white;
@@ -187,7 +186,7 @@ header #sinscrire
 
 
 
-#section1 input[type=button] 
+#recherche_main input[type=button] 
 {
     border: 0px;    /*Enlève le contour du bouton*/
 }
@@ -199,27 +198,26 @@ header #sinscrire
 
 /* Partie des filtres de la Section 1*/
 
-#section1 #filtres
+#recherche_main #filtres
 {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
     width: 75%;
-    margin-bottom: 35px;
-    margin-left: 50px;
+    margin: 0px 0px 35px 5px;
 }
 
 
 
-#section1 .filtremot
+#recherche_main .filtremot
 {
-    margin-top: 9px;
     font-weight: bold;
     font-size: 1.1em;
 }
 
 
 
-#section1 .bulles
+#recherche_main .bulles
 {
     border-style: solid;
     border-width: 2px;
@@ -230,25 +228,26 @@ header #sinscrire
     font-weight: bold;
     height: 40px;
     margin-left: 3em;
+    margin-bottom: 1em;
 }
 
 
 
-#section1 .bulles:hover
+#recherche_main .bulles:hover
 {
     background-color: #F2F2F2;
 }
 
 
 
-#section1 span
+#recherche_main span
 {
     color: #0065FC; 
 }
 
 
 
-#section1 .bulle .icon-background
+#recherche_main .icone .icon-background
 {
     color: #DEEBFF;
     margin-top: -1px;
@@ -256,17 +255,18 @@ header #sinscrire
 
 
 
-#section1 .bulle
+#recherche_main .icone
 {
     margin-left: -10px;  
 }
 
 
 
-#section1 p span
+#recherche_main .bulle_nom
 {
-    display: block; 
-    margin: -5px 20px 0px -30px;
+    display: flex; 
+    align-items: center;
+    padding-right: 10px;
 }
 
 
@@ -275,21 +275,24 @@ header #sinscrire
 
 /* Partie info avec la bulle info de la Section 1 */
 
-#section1 .fa-info
+#recherche_main .fa-info
 {
     color: #0065FC;
-    padding: 7px 4px 8px 12px;
+    width: 25px;
+    height: 25px;
     border: 2px solid #F2F2F2;
-    width: 1%;
     border-radius: 50%;
-    margin: 0px 0px 30px 60px;
+    margin: 0px 0px 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 
-#section1 #info
+#recherche_main #info
 {
-    margin: -60px 0px 0px 120px;
+    margin: -60px 0px 0px 60px;
 }
 
 
@@ -301,24 +304,24 @@ header #sinscrire
    
 
 
-/* Section 2*/
+/* Section hebergement_main*/
 
-#section2
+#hebergement_main
 {
   display: flex;
-  margin: 20px 0px 0px 20px; 
+  margin: 20px 0px 0px 0px;
 }
 
 
 
-#section2 .card
+#hebergement_main .card
 {
     box-shadow: 4px 4px 8px 0px rgb(201, 199, 199);
 }
 
 
 
-#section2 a:link
+#hebergement_main a:link
 {
     text-decoration: none;
     color: black;
@@ -328,48 +331,47 @@ header #sinscrire
 
 
 
-/* Partie hebergements de la Section 2 */
+/* Partie hebergements de la Section hebergement_main */
 
-#section2 .hebergements
+#hebergement_main .hebergements
 {
     background-color: #F2F2F2;
     padding: 20px 40px 20px 10px;
-    margin: 30px 30px 30px 30px;
-    width: 57%;
+    margin: 30px 30px 30px 0px;
     border-radius: 20px 20px 20px 20px;
 }
 
 
 
-#section2 a:link
+#hebergement_main a:link
 {
     color: black;
 }
 
 
 
-#section2 a:visited
+#hebergement_main a:visited
 {
     color: black;
 }
 
 
 
-#section2 h3
+#hebergement_main h3
 {
     font-size: 1em;
 }
 
 
 
-#section2 #ancre_hebergements
+#hebergement_main #ancre_hebergements
 {
     margin-left: 40px;
 }
 
 
 
-#section2 .heberg 
+#hebergement_main .hebergement_container 
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -380,7 +382,7 @@ header #sinscrire
 
 
 
-#section2 .heberg .card 
+#hebergement_main .hebergement_container .card 
 {
     background: white;
     margin: 5px;
@@ -391,7 +393,7 @@ header #sinscrire
 
 
 
-#section2 .heberg img
+#hebergement_main .hebergement_container img
 {
     width: 100%;
     height: 100px;
@@ -402,7 +404,7 @@ header #sinscrire
 
 
 
-#section2 .heberg p
+#hebergement_main .hebergement_container p
 {
     margin-top: -10px;
     font-size: 0.9em;
@@ -411,21 +413,21 @@ header #sinscrire
 
 
 
-#section2 .fa-star
+#hebergement_main .fa-star
 {
     color: #0065FC;
 }
 
 
 
-#section2 span .fa-star
+#hebergement_main span .fa-star
 {
     color: rgb(228, 226, 226);
 }
 
 
 
-#section2 .etoiles
+#hebergement_main .etoiles
 {
     margin: -5px 0px 0px -2px;
 }
@@ -433,13 +435,13 @@ header #sinscrire
 
 
 
-#section2 article a#afficherplus
+#hebergement_main article a#afficherplus
 {
     color: black;
     font-weight: bold;
     font-size: 1.1em;
     display: block;
-    margin-top: 40px;
+    margin: 50px 0px 0px 40px;
 }
 
 
@@ -448,26 +450,33 @@ header #sinscrire
 
 /* Partie Les plus populaires */
 
-#section2 .populaires
+#hebergement_main .populaires
 {
     background-color: #F2F2F2;
     padding: 20px 37px 20px 37px;
-    margin: 30px 0px 30px 10px;
-    width: 26%;
+    margin: 30px 0px 30px 0px;
     border-radius: 20px 20px 20px 20px;
 }
 
 
 
-#section2 .populaires h2
+#hebergement_main .populaires .titre_container
 {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
 
 
-#section2 .popu 
+#hebergement_main .populaires .titre_container h2
+{
+    margin-left: 20px;
+}
+
+
+
+#hebergement_main .popu 
 {
     display: grid;
     grid-template-columns: 1fr;
@@ -477,7 +486,7 @@ header #sinscrire
 
 
 
-#section2 .cartepopu 
+#hebergement_main .cartepopu 
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -492,7 +501,7 @@ header #sinscrire
 
 
 
-#section2 .cartepopu img
+#hebergement_main .cartepopu img
 {
     width: 100%;
     height: 285%;
@@ -504,24 +513,24 @@ header #sinscrire
 
 
 
-#section2 .cartepopu h3
+#hebergement_main .cartepopu h3
 {
     grid-column-start: 2;
     margin: 0px 20px 0px 0px;
+    flex-wrap: wrap;
 }
 
 
 
-#section2 .cartepopu p
+#hebergement_main .cartepopu p
 {
     grid-column-start: 2;
     grid-row-start: 2;
     color: gray;
     font-size: 0.9em;
-    margin-top: -5px;
 }
 
-#section2 .cartepopu .etoilespopu
+#hebergement_main .cartepopu .etoilespopu
 {
     grid-column-start: 2;
     grid-row-start: 3;
@@ -538,32 +547,31 @@ header #sinscrire
 
 /* Section 3 */
 
-#section3
+#activites_main
 {
     height: 600px;
 }
 
 
 
-#section3 #ancre_activites
+#activites_main #ancre_activites
 {
-    margin-left: 55px;
+    margin-left: 40px;
 }
 
 
 
-#section3 .activ
+#activites_main .activ
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 40px;
-    margin: 0px 40px 0px 55px;
 }
 
 
 
-#section3 a:link
+#activites_main a:link
 {
     text-decoration: none;
     color: black;
@@ -571,7 +579,7 @@ header #sinscrire
 
 
 
-#section3 .carteactiv
+#activites_main .carteactiv
 {
     border-radius: 20px 20px 20px 20px;
     box-shadow: 4px 4px 8px 0px rgb(201, 199, 199);
@@ -579,7 +587,7 @@ header #sinscrire
 
 
 
-#section3 .activ h3
+#activites_main .activ h3
 {
     margin: 10px 0px 20px 20px;
     padding-bottom: 20px;
@@ -588,7 +596,7 @@ header #sinscrire
 
 
 
-#section3 .activ #vieuxport 
+#activites_main .activ #vieuxport 
 {
     grid-column-start: 1;
     grid-row: 1/3;
@@ -596,7 +604,7 @@ header #sinscrire
 
 
 
-#section3 .activ #img-vieuxport
+#activites_main .activ #img-vieuxport
 {
     width: 100%;
     height: 424px;
@@ -606,7 +614,7 @@ header #sinscrire
 
 
 
-#section3 .activ #fortpomegues
+#activites_main .activ #fortpomegues
 {
     grid-column-start: 2;
     grid-row-start: 1;
@@ -614,7 +622,7 @@ header #sinscrire
 
 
 
-#section3 .activ #img-fortpomegues
+#activites_main .activ #img-fortpomegues
 {
     width: 100%;
     height: 200px;
@@ -624,7 +632,7 @@ header #sinscrire
 
 
 
-#section3 .activ #ilesfrioul
+#activites_main .activ #ilesfrioul
 {
     grid-column-start: 2;
     grid-row-start: 2;
@@ -632,7 +640,7 @@ header #sinscrire
 
 
 
-#section3 .activ #img-ilesfrioul
+#activites_main .activ #img-ilesfrioul
 {
     width: 100%;
     height: 110px;
@@ -642,7 +650,7 @@ header #sinscrire
 
 
 
-#section3 .activ #calanques
+#activites_main .activ #calanques
 {
     grid-column-start: 3;
     grid-row: 1/3;
@@ -650,7 +658,7 @@ header #sinscrire
 
 
 
-#section3 .activ #img-calanques
+#activites_main .activ #img-calanques
 {
     width: 100%;
     height: 424px;
@@ -660,7 +668,7 @@ header #sinscrire
 
 
 
-#section3 .activ #notredame
+#activites_main .activ #notredame
 {
     grid-column-start: 4;
     grid-row-start: 1;
@@ -668,7 +676,7 @@ header #sinscrire
 
 
 
-#section3 .activ #img-notredame
+#activites_main .activ #img-notredame
 {
     width: 100%;
     height: 150px;
@@ -678,7 +686,7 @@ header #sinscrire
 
 
 
-#section3 .activ #parclongchamp
+#activites_main .activ #parclongchamp
 {
     grid-column-start: 4;
     grid-row-start: 2;
@@ -687,7 +695,7 @@ header #sinscrire
 
 
 
-#section3 .activ #img-parclongchamp
+#activites_main .activ #img-parclongchamp
 {
     width: 100%;
     height: 160px;
@@ -710,8 +718,15 @@ footer
 {
     background-color: #F2F2F2;
     display: flex;
-    
-    padding-left: 20px;
+    padding-left: 60px;
+}
+
+
+
+footer .footer-parties
+{
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -719,16 +734,16 @@ footer
 footer ul
 {
     list-style: none;
-    margin-right: 250px;
+    margin: 0px 250px 0px -37px;
     font-size: 0.9em;
 }
 
 
 
-footer span 
+footer h1 
 {
+    font-weight: bold;
     font-size: 1.2em;
-    padding-bottom: 30px;
 }
 
 
@@ -781,7 +796,7 @@ footer a:visited
 @media screen and (min-width: 1024px) 
 {
 
-    #section1 .fa-search
+    #recherche_main .fa-search
     {
         display: none;
     }
@@ -797,14 +812,37 @@ footer a:visited
 
 
 
-
-@media screen and (min-width: 1450px)
+/* Pour les écrans entre 1024px et 1148px : responsive mieux adapté */
+@media screen and (min-width: 1024px) and (max-width: 1374px)
 {
 
-    body
+    #hebergement_main .cartepopu 
     {
-        background-position: 6% 30px; 
+        padding-right: 0px;
+        height: 120px;
     }
+
+
+
+    #hebergement_main .cartepopu p
+    {
+        margin-top: 30px;
+    }
+
+
+
+    #hebergement_main .cartepopu .etoilespopu
+    {
+        margin-top: 20px;
+    }
+
+
+
+    #hebergement_main .cartepopu img
+    {
+        height: 137px;
+    }
+
 
 }
 
@@ -822,37 +860,25 @@ footer a:visited
 
     /* Section 1 */
 
-    #section1 #formulaire
+    #recherche_main #formulaire
     {
-        width: 50%;
+        width: 60%;
     }
     
     
     
-    #section1 .fa-search
+    #recherche_main .fa-search
     {
         display: none;
     }
 
 
 
-    #section1 .bulles
-    {
-        margin-bottom: 20px;
-    }
 
 
+    /* Section #hebergement_main */
 
-    #section1 .fa-info
-    {
-        padding: 7px 10px 8px 12px;
-    }
-
-
-
-    /* Section 2 */
-
-     #section2
+    #hebergement_main
     {
         display: flex;
         flex-direction: column-reverse;
@@ -860,37 +886,28 @@ footer a:visited
    
    
    
-    #section2 .populaires
-    {
-        width: 82%;
-        margin-left: 20px;
-    }
-   
-   
-   
-    #section2 .cartepopu h3
+    #hebergement_main .cartepopu h3
     {
         margin-right: 0px;
     }
    
    
    
-    #section2 .cartepopu p
+    #hebergement_main .cartepopu p
     {
         margin-top: 10px;
     }
    
    
    
-    #section2 .hebergements
+    #hebergement_main .hebergements
     {
-        width: 85%;
-        margin-left: 20px;
+        width: 94%;
     }
 
 
 
-    #section2 .heberg
+    #hebergement_main .hebergement_container
     {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -898,7 +915,7 @@ footer a:visited
    
 
 
-    #section2 .heberg:nth-child(1)
+    #hebergement_main .hebergement_container:nth-child(1)
     {
         grid-column-start: 1;
         grid-row-start: 1;
@@ -906,7 +923,7 @@ footer a:visited
 
 
 
-    #section2 .heberg:nth-child(2)
+    #hebergement_main .hebergement_container:nth-child(2)
     {
         display: grid;   
         grid-column-start: 1;
@@ -915,7 +932,7 @@ footer a:visited
 
 
 
-    #section2 .heberg:nth-child(3)
+    #hebergement_main .hebergement_container:nth-child(3)
     {
         grid-column-start: 1;
         grid-row-start: 3;
@@ -923,7 +940,7 @@ footer a:visited
 
 
 
-    #section2 .heberg:nth-child(4)
+    #hebergement_main .hebergement_container:nth-child(4)
     {
         grid-column-start: 2;
         grid-row-start: 1;
@@ -931,7 +948,7 @@ footer a:visited
 
 
 
-    #section2 .heberg:nth-child(5)
+    #hebergement_main .hebergement_container:nth-child(5)
     {
         grid-column-start: 2;
         grid-row-start: 2;
@@ -939,7 +956,7 @@ footer a:visited
 
 
 
-    #section2 .heberg:nth-child(5)
+    #hebergement_main .hebergement_container:nth-child(5)
     {
         grid-column-start: 2;
         grid-row-start: 3;
@@ -947,21 +964,21 @@ footer a:visited
    
    
 
-    #section2 #ancre_hebergements
+    #hebergement_main #ancre_hebergements
     {
         margin-left: 0px;
     }
 
 
 
-    #section2 #ancre_hebergements h2
+    #hebergement_main #ancre_hebergements h2
    {
        margin-left: 27px;
    }
    
 
    
-    #section2 .heberg
+   #hebergement_main .hebergement_container
     {
         display: flex;
         flex-direction: column;
@@ -970,7 +987,7 @@ footer a:visited
    
    
    
-    #section2 #afficherplus
+    #hebergement_main #afficherplus
     {
         margin-bottom: 30px;
         margin-left: 20px;
@@ -986,28 +1003,27 @@ footer a:visited
    
     /* Section 3 */
    
-    #section3 .activ
+    #activites_main .activ
     { 
         display: flex;
         flex-direction: column;
-        align-content: space-between;
-        margin-left: 40px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-gap: 40px;
+        width: 100%;
     }
    
    
    
-    #section3 
+    #activites_main
     {
         height: auto;   
     }
    
 
    
-    #section3 .activ #vieuxport
+    #activites_main.activ #vieuxport
     {
         height: auto;
         margin: 0px;
@@ -1017,14 +1033,14 @@ footer a:visited
    
    
    
-    #section3 .activ #img-vieuxport
+    #activites_main .activ #img-vieuxport
     {
         height: 130px;
     }
    
    
    
-    #section3 .activ #fortpomegues
+    #activites_main .activ #fortpomegues
     {
         height: auto;
         margin: 0px;
@@ -1034,14 +1050,14 @@ footer a:visited
    
    
    
-    #section3 .activ #img-fortpomegues
+    #activites_main .activ #img-fortpomegues
     {
         height: 130px;
     }
    
    
    
-    #section3 .activ #ilesfrioul
+    #activites_main .activ #ilesfrioul
     {
         height: auto;
         margin: 0px;
@@ -1051,14 +1067,14 @@ footer a:visited
    
    
    
-    #section3 .activ #img-ilesfrioul
+    #activites_main .activ #img-ilesfrioul
     {
         height: 130px;
     }
    
    
    
-    #section3 .activ #calanques
+    #activites_main .activ #calanques
     {
         height: auto;
         margin: 0px;
@@ -1068,14 +1084,14 @@ footer a:visited
    
    
    
-    #section3 .activ #img-calanques
+    #activites_main .activ #img-calanques
     {
         height: 130px;
     }
    
    
    
-    #section3 .activ #notredame
+    #activites_main .activ #notredame
     {
         height: auto;
         margin: 0px;
@@ -1085,14 +1101,14 @@ footer a:visited
    
    
    
-    #section3 .activ #img-notredame
+    #activites_main .activ #img-notredame
     {
         height: 130px;
     }
    
    
    
-    #section3 .activ #parclongchamp
+    #activites_main .activ #parclongchamp
     {
         height: auto;
         margin: 0px;
@@ -1102,7 +1118,7 @@ footer a:visited
    
    
    
-    #section3 .activ #img-parclongchamp
+    #activites_main .activ #img-parclongchamp
     {
         height: 130px;
     }
@@ -1123,11 +1139,18 @@ footer a:visited
         margin: 30px 0px 0px -10px;
         padding: 0px 20px 20px 20px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
+
+
+
+    footer h1
+   {
+    padding-left: 40px;
+   }
    
    
-   
+
     footer ul 
     {
         margin: 0px;
@@ -1135,26 +1158,11 @@ footer a:visited
    
    
    
-    footer ul li:nth-child(1)
-    {
-        margin: 30px 100px 0px 0px;
-    }
-   
-   
-   
-    footer ul li:nth-child(2)
-    {
-           
-        margin: 20px 0px 0px 0px;
-    }
-   
-   
-   
-    footer ul li:nth-child(3)
-    {
-        margin: 0px 100px 0px 0px;
-    }
+    
 
+
+
+    
 
 }
 
@@ -1170,12 +1178,12 @@ footer a:visited
 /* Pour mobiles */
 @media screen and (max-width: 767px) 
 {
-    
-    body
-    {
-        height: auto;
-    }
 
+    #bloc-page
+    {
+        margin: 0px;
+        background-position: 20px 30px;
+    }
 
 
 
@@ -1206,14 +1214,14 @@ footer a:visited
         display: inline-block;
     }
 
-    ul li:nth-child(1)
+    header ul li:nth-child(1)
     {
         margin: 100px 0px 0px -27px;
     }
 
 
 
-    ul li:nth-child(2)
+    header ul li:nth-child(2)
     {
         margin: 120px 0px 0px 160px;
     }
@@ -1255,28 +1263,28 @@ footer a:visited
 
     /* Section 1 */
 
-    #section1 h2
+    #recherche_main h1
     {
-        margin: 40px 0px 0px 10px;
+        margin-left: 20px;
     }
 
 
 
-    #section1 p
+    #recherche_main p
     {
-        margin-left: 10px;
+        margin-left: 20px;
     }
     
     
 
-    #section1 #bouton
+    #recherche_main #bouton
     {
         display: none;
     }
 
 
 
-    #section1 .fa-search
+    #recherche_main .fa-search
     {
         background-color: #0065FC;
         color: white;
@@ -1288,15 +1296,15 @@ footer a:visited
 
 
 
-    #section1 #formulaire
+    #recherche_main #formulaire
     {
         width: 90%;
-        margin: 30px 0px 20px 10px;
+        margin: 30px 0px 20px 20px;
     }
 
 
 
-    #section1 #filtres
+    #recherche_main #filtres
     {
         display: flex;
         flex-wrap: wrap;
@@ -1305,20 +1313,20 @@ footer a:visited
 
 
 
-    #section1 .filtremot
+    #recherche_main .filtremot
     {
         margin: 10px 100px 20px 20px;
     }
 
 
 
-    #section1 .bulle
+    #recherche_main .icone
     {
         margin: 0px 0px 20px -35px;
     }
 
 
-    #section1 .bulles
+    #recherche_main .bulles
     {
         margin: 10px 0px 0px 20px;
         padding-left: 1.7em;
@@ -1326,25 +1334,14 @@ footer a:visited
 
 
 
-    #section1 p span
+    #recherche_main .fa-info 
     {
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
 
 
-    #section1 #info 
-    {
-        margin-left: 50px;
-    }
-
-
-
-    #section1 .fa-info
-    {
-        padding-right: 14px;
-        margin-left: 5px;
-    }
+    
 
     
 
@@ -1357,9 +1354,9 @@ footer a:visited
 
 
 
-        /* Section 2 */
+        /* Section hebergement_main */
 
-    #section2
+    #hebergement_main
     {
         display: flex;
         flex-direction: column-reverse;
@@ -1367,9 +1364,8 @@ footer a:visited
 
 
 
-    #section2 .populaires
+    #hebergement_main .populaires
     {
-        width: 90%;
         margin: 30px 0px -10px -28px;
         padding-right: 25px;
         border-radius: 0px;
@@ -1377,21 +1373,28 @@ footer a:visited
 
 
 
-    #section2 .cartepopu h3
+    #hebergement_main .cartepopu
+    {
+        margin: 5px 5px 5px 20px;
+    }
+
+
+
+    #hebergement_main .cartepopu h3
     {
         margin-right: 0px;
     }
 
 
 
-    #section2 .cartepopu p
+    #hebergement_main .cartepopu p
     {
         margin-top: 10px;
     }
 
 
 
-    #section2 .hebergements
+    #hebergement_main .hebergements
     {
         background-color: white;
         width: auto;
@@ -1401,14 +1404,14 @@ footer a:visited
 
 
 
-    #section2 #ancre_hebergements
+    #hebergement_main #ancre_hebergements
     {
-        margin-left: 0px;
+        margin-left: 20px;
     }
 
 
 
-    #section2 .heberg
+    #hebergement_main .hebergement_container
     {
         display: flex;
         flex-direction: column;
@@ -1417,11 +1420,10 @@ footer a:visited
 
 
 
-    #section2 #afficherplus
+    #hebergement_main .hebergement_container .card
     {
-        margin-bottom: 30px;
+        margin: 5px 5px 5px 20px;
     }
-
 
 
 
@@ -1432,7 +1434,7 @@ footer a:visited
 
     /* Section 3 */
 
-    #section3 .activ
+    #activites_main .activ
     { 
         display: flex;
         flex-direction: column;
@@ -1442,30 +1444,15 @@ footer a:visited
 
 
 
-    #section3
+    #activites_main
     {
         height: auto;
-        
+        margin-top: 50px;
     }
 
 
 
-    #section3 .activ #vieuxport
-    {
-        height: auto;
-        margin-bottom: -20px;
-    }
-
-
-
-    #section3 .activ #img-vieuxport
-    {
-        height: 130px;
-    }
-
-
-
-    #section3 .activ #fortpomegues
+    #activites_main .activ #vieuxport
     {
         height: auto;
         margin-bottom: -20px;
@@ -1473,14 +1460,14 @@ footer a:visited
 
 
 
-    #section3 .activ #img-fortpomegues
+    #activites_main .activ #img-vieuxport
     {
         height: 130px;
     }
 
 
 
-    #section3 .activ #ilesfrioul
+    #activites_main .activ #fortpomegues
     {
         height: auto;
         margin-bottom: -20px;
@@ -1488,14 +1475,14 @@ footer a:visited
 
 
 
-    #section3 .activ #img-ilesfrioul
+    #activites_main .activ #img-fortpomegues
     {
         height: 130px;
     }
 
 
 
-    #section3 .activ #calanques
+    #activites_main .activ #ilesfrioul
     {
         height: auto;
         margin-bottom: -20px;
@@ -1503,14 +1490,29 @@ footer a:visited
 
 
 
-    #section3 .activ #img-calanques
+    #activites_main .activ #img-ilesfrioul
     {
         height: 130px;
     }
 
 
 
-    #section3 .activ #notredame
+    #activites_main .activ #calanques
+    {
+        height: auto;
+        margin-bottom: -20px;
+    }
+
+
+
+    #activites_main .activ #img-calanques
+    {
+        height: 130px;
+    }
+
+
+
+    #activites_main .activ #notredame
     {
         height: auto;
         margin-bottom: 30px;
@@ -1518,21 +1520,21 @@ footer a:visited
 
 
 
-    #section3 .activ #img-notredame
+    #activites_main.activ #img-notredame
     {
         height: 130px;
     }
 
 
 
-    #section3 .activ #parclongchamp
+    #activites_main .activ #parclongchamp
     {
         height: auto;
     }
 
 
 
-    #section3 .activ #img-parclongchamp
+    #activites_main .activ #img-parclongchamp
     {;
         height: 130px;
     }
@@ -1552,8 +1554,14 @@ footer a:visited
     {
         display: flex;
         flex-direction: column;
-        margin: 0px 0px 0px -10px;
-        padding: 0px 20px 20px 20px;
+        height: 780px;
+    }
+
+
+
+    footer h1
+    {
+       margin-top: 50px;
     }
 
 
@@ -1568,14 +1576,6 @@ footer a:visited
     footer ul li:nth-child(1)
     {
         margin: 30px 0px 0px 0px;
-    }
-
-
-
-    footer ul li:nth-child(2)
-    {
-        
-        margin: 20px 0px 0px 0px;
     }
 
 
