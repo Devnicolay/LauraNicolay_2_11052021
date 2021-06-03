@@ -25,10 +25,7 @@ body
 
 #bloc-page
 {
-    margin: 0px 50px 0px 50px;
-    background-image: url(images/Logo.svg);
-    background-repeat: no-repeat;
-    background-position: 0px 30px;
+    margin: 0px 50px;
     max-width: 1450px;
 }
 
@@ -42,11 +39,34 @@ body
 
 /* Header*/
 
+header
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+
+
 header nav
 {
     display: flex;
-    justify-content: flex-end;
-    margin: 30px 0px 0px 0px;
+    align-items: baseline;
+}
+
+
+
+header img
+{
+    width: 100px;
+    margin-top: 15px;
+}
+
+
+
+header #logo
+{
+    width: 150px;
 }
 
 
@@ -55,14 +75,14 @@ header nav ul
 {
     display: flex;
     list-style: none;
-    margin-right: 100px;
+    margin: 0px 60px 0px 0px;
 }
 
 
 
 header nav li
 {
-    margin-left: 80px;
+    margin-left: 60px;
 }
 
 
@@ -74,19 +94,10 @@ header a:link
 
 
 
-header ul a:hover
+header  a:hover
 {
     border-top: #0065FC solid ;
-    padding-top: 20px;
-}
-
-
-
-header #sinscrire:hover
-{
-    border-top: #0065FC solid ;
-    padding-top: 20px;
-    margin-top: -8px;
+    color:#0065FC;
 }
 
 
@@ -95,7 +106,7 @@ header #hebergements
 {
     color:#0065FC;
     border-top: #0065FC solid ;
-    padding-top: 20px;
+    padding: 45px 25px 0px 25px;
 }
 
 
@@ -103,6 +114,7 @@ header #hebergements
 header #activites
 {
     color: gray;
+    padding: 45px 25px 0px 25px;
 }
 
 
@@ -111,7 +123,7 @@ header #sinscrire
 {
     color:#0065FC;
     font-weight: bold;
-    margin: 15px 0px 0px -20px;
+    padding: 45px 25px 0px 25px;
 }
 
 
@@ -156,7 +168,7 @@ header #sinscrire
 #recherche_main .fa-map-marker-alt
 {
     background-color: #F2F2F2;
-    width: 100%;  
+    color: black;
     border-radius: 10px 0px 0px 10px; 
 }
 
@@ -165,30 +177,39 @@ header #sinscrire
 #recherche_main input[type=search] 
 {
       
-    width: 100%;  
+    width: 100%;
     border-color: #F2F2F2;
     border-style: solid;
+    border-right: none;
     padding-left: 10px;
     margin-bottom: 1px;
 }
 
 
 
-#recherche_main #bouton
+#recherche_main #recherche::placeholder
 {
-    background-color: #0065FC;
-    color: white;
-    display: flex;
-    width: 100%;
-    height: 97%;
-    border-radius: 0px 10px 10px 0px;
+    font-weight: bold;
+    color: black;
 }
 
 
 
-#recherche_main input[type=button] 
+
+#recherche_main button
 {
+    background-color: #0065FC;
+    font-weight: bold;
+    border-radius: 0px 10px 10px 0px;
     border: 0px;    /*Enlève le contour du bouton*/
+    padding: 0px 10px;
+}
+
+
+
+#recherche_main button span
+{
+    color: white;
 }
 
 
@@ -221,7 +242,7 @@ header #sinscrire
 {
     border-style: solid;
     border-width: 2px;
-    border-radius: 40px 40px 40px 40px;
+    border-radius: 40px;
     border-color: #F2F2F2;
     display: flex;
     justify-content: flex-start;
@@ -267,6 +288,7 @@ header #sinscrire
     display: flex; 
     align-items: center;
     padding-right: 10px;
+    color: black;
 }
 
 
@@ -282,17 +304,18 @@ header #sinscrire
     height: 25px;
     border: 2px solid #F2F2F2;
     border-radius: 50%;
-    margin: 0px 0px 30px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 10px;
 }
 
 
 
 #recherche_main #info
 {
-    margin: -60px 0px 0px 60px;
+    display: flex;
+    align-items: baseline;
 }
 
 
@@ -309,7 +332,7 @@ header #sinscrire
 #hebergement_main
 {
   display: flex;
-  margin: 20px 0px 0px 0px;
+  margin-top: 20px;
 }
 
 
@@ -338,7 +361,7 @@ header #sinscrire
     background-color: #F2F2F2;
     padding: 20px 40px 20px 10px;
     margin: 30px 30px 30px 0px;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     width: 100%;
 }
 
@@ -387,9 +410,16 @@ header #sinscrire
 {
     background: white;
     margin: 5px;
-    padding: 16px 8px 5px 8px;
-    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    border-radius: 10px;
     box-shadow: 4px 4px 8px 0px rgb(201, 199, 199);
+}
+
+
+
+#hebergement_main .hebergement_container .card .text_card_hebergements
+{
+    margin-left: 10px;
 }
 
 
@@ -399,7 +429,6 @@ header #sinscrire
     width: 100%;
     height: 100px;
     object-fit: cover;
-    margin: -10px 0px -10px 0px;
     border-radius: 10px 10px 0px 0px; 
 }
 
@@ -436,7 +465,7 @@ header #sinscrire
 
 
 
-#hebergement_main article a#afficherplus
+#hebergement_main section a#afficherplus
 {
     color: black;
     font-weight: bold;
@@ -456,7 +485,7 @@ header #sinscrire
     background-color: #F2F2F2;
     padding: 20px 37px 20px 37px;
     margin: 30px 0px 30px 0px;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     width: 50%;
 }
 
@@ -497,7 +526,7 @@ header #sinscrire
     background: white;
     margin: 5px;
     padding: 15px;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     height: 110px;
 }
 
@@ -518,6 +547,7 @@ header #sinscrire
 #hebergement_main .cartepopu h3
 {
     grid-column-start: 2;
+    grid-row-start: 1;
     margin: 0px 20px 0px 0px;
     flex-wrap: wrap;
 }
@@ -556,13 +586,6 @@ header #sinscrire
 
 
 
-#activites_main #ancre_activites
-{
-    margin-left: 40px;
-}
-
-
-
 #activites_main .activ
 {
     display: grid;
@@ -583,7 +606,7 @@ header #sinscrire
 
 #activites_main .carteactiv
 {
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     box-shadow: 4px 4px 8px 0px rgb(201, 199, 199);
 }
 
@@ -719,8 +742,16 @@ header #sinscrire
 footer
 {
     background-color: #F2F2F2;
-    display: flex;
     padding-left: 60px;
+}
+
+
+
+footer .footer_main
+{
+    max-width: 1450px;
+    margin: auto;
+    display: flex;
 }
 
 
@@ -729,6 +760,7 @@ footer .footer-parties
 {
     display: flex;
     flex-direction: column;
+    width: 33%;
 }
 
 
@@ -736,7 +768,7 @@ footer .footer-parties
 footer ul
 {
     list-style: none;
-    margin: 0px 250px 0px -37px;
+    padding: 0px;
     font-size: 0.9em;
 }
 
@@ -870,7 +902,7 @@ footer a:visited
 
 
 /* Pour tablettes */
-@media screen and (min-width: 767px) and (max-width: 1024px)
+@media screen and (min-width: 768px) and (max-width: 1024px)
 {
 
     /* Section 1 */
@@ -925,7 +957,7 @@ footer a:visited
     #hebergement_main .hebergements
     {
         width: 91%;
-        padding: 20px 30px 20px 30px;
+        padding: 20px 30px;
     }
 
 
@@ -1018,7 +1050,7 @@ footer a:visited
    
    
     /* Section 3 */
-   
+
     #activites_main .activ
     { 
         display: flex;
@@ -1029,7 +1061,6 @@ footer a:visited
         grid-gap: 40px;
         width: 100%;
     }
-   
    
    
     #activites_main
@@ -1138,46 +1169,6 @@ footer a:visited
     {
         height: 130px;
     }
-   
-       
-   
-   
-   
-   
-   
-   
-   
-   
-    /* Footer */
-   
-    footer
-    {
-        margin: 30px 0px 0px -10px;
-        padding: 0px 50px 20px 20px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-
-
-    footer h1
-   {
-    padding-left: 40px;
-   }
-   
-   
-
-    footer ul 
-    {
-        margin: 0px;
-    }
-   
-   
-   
-    
-
-
-
     
 
 }
@@ -1198,7 +1189,6 @@ footer a:visited
     #bloc-page
     {
         margin: 0px;
-        background-position: 20px 30px;
     }
 
 
@@ -1210,63 +1200,72 @@ footer a:visited
     header 
     {
         border-bottom: #F2F2F2 solid;
-        height: 175px;
-        margin: -40px 0px 0px -10px;
+        flex-direction: column;
+        padding-bottom: 16px;
+    }
+
+
+
+    header  a:hover
+    {
+        border-top: none;
+    }
+
+
+
+    header img
+    {
+        margin-left: 20px;
     }
 
 
 
     header nav
     {
-        padding-bottom: 100px;
-        display: flex;
         flex-direction: column;
     }
 
 
 
-    header ul
+    header nav ul
     {
-        display: inline-block;
-    }
-
-    header ul li:nth-child(1)
-    {
-        margin: 100px 0px 0px -27px;
+        padding: 0px;
+        order: 3;
     }
 
 
 
-    header ul li:nth-child(2)
+    header nav li
     {
-        margin: 120px 0px 0px 160px;
+        margin-left: 0px;
     }
 
 
 
-    header #hebergements
+
+    header nav #hebergements
     {
         border-top: transparent;
         border-bottom: #0065FC solid;
-        padding-bottom: 20px;
-        display: inline-block;
-        width: 170%;
-        text-align: center;
+        padding: 0px 50px 16px 50px;
     }
 
 
 
-    header #activites 
+    header nav #activites 
     {
         border-top: transparent;
+        padding: 0px 50px 16px 50px;
     }
 
 
 
-    header #sinscrire
+    header nav #sinscrire
     {
-        margin: -115px 0px 0px 310px;
+        padding: 0px;
+        margin: -30px 0px 30px 290px;
     }
+
 
 
     
@@ -1279,21 +1278,14 @@ footer a:visited
 
     /* Section 1 */
 
-    #recherche_main h1
-    {
-        margin-left: 20px;
-    }
-
-
-
-    #recherche_main p
+    #recherche_main .description
     {
         margin-left: 20px;
     }
     
     
 
-    #recherche_main #bouton
+    #recherche_main .button span
     {
         display: none;
     }
@@ -1304,10 +1296,15 @@ footer a:visited
     {
         background-color: #0065FC;
         color: white;
-        width: 35px;
-        height: 30px;
-        border-radius: 0px 10px 10px 0px;
-        padding: 10px 0px 0px 15px;
+        width: 25px;
+    }
+
+
+
+    #recherche_main .button
+    {
+        border-radius: 10px;
+        margin-left: -30px;
     }
 
 
@@ -1324,7 +1321,6 @@ footer a:visited
     {
         display: flex;
         flex-wrap: wrap;
-        margin-left: 0px;
     }
 
 
@@ -1350,9 +1346,16 @@ footer a:visited
 
 
 
-    #recherche_main .fa-info 
+    #recherche_main #info
     {
-        margin-left: 20px;
+        margin-left: 10px;
+    }
+
+
+
+    #recherche_main #info .fa-info
+    {
+        width: 30px;
     }
 
 
@@ -1406,7 +1409,7 @@ footer a:visited
 
     #hebergement_main .cartepopu p
     {
-        margin-top: 10px;
+        margin-top: 0px;
     }
 
 
@@ -1444,12 +1447,26 @@ footer a:visited
 
 
 
+    #hebergement_main .hebergements #afficherplus
+    {
+        margin-left: 20px;
+    }
+
+
+
 
 
 
 
 
     /* Section 3 */
+
+    #activites_main h2 
+    {
+        margin-left: 40px;
+    }
+
+
 
     #activites_main .activ
     { 
@@ -1568,7 +1585,7 @@ footer a:visited
 
     /* Footer */
 
-    footer
+    footer .footer_main
     {
         display: flex;
         flex-direction: column;
@@ -1576,30 +1593,17 @@ footer a:visited
 
 
 
-    footer h1
+    footer .footer_main .footer-parties
     {
-       margin-top: 50px;
+        width: auto;
     }
 
 
 
-    footer ul 
+    footer .footer_main .footer-parties h1
     {
-        margin-right: 0px;
-    }
-
-
-
-    footer ul li:nth-child(1)
-    {
-        margin: 30px 0px 0px 0px;
-    }
-
-
-
-    footer ul li:nth-child(3)
-    {
-        margin: 0px;
+       margin-top: 30px;
+       margin-bottom: 0px;
     }
 
 
