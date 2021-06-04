@@ -192,7 +192,6 @@ header #sinscrire
 
 
 
-
 #recherche_main button
 {
     background-color: #0065FC;
@@ -1300,6 +1299,13 @@ footer a:visited
     {
         margin-left: 20px;
     }
+
+
+
+    #recherche_main input[type=search] 
+    {
+        width: 100%;
+    }
     
     
 
@@ -1343,9 +1349,11 @@ footer a:visited
 
 
 
-    #recherche_main .filtremot
+    #recherche_main #filtres h2
     {
-        margin: 10px 100px 20px 20px;
+        font-size: 1.1em;
+        margin: 10px 100px 5px 20px;
+        width: 100%;
     }
 
 
