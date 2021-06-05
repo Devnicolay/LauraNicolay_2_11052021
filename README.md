@@ -1,19 +1,15 @@
 # Reservia
 
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)  [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
-
 
 ## Description
 
-Projet 2 du parcours développeur Front-end chez Openclassrooms qui a pour objectif d’intégrer la maquette du site Reservia  qui est un site qui permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix.
+Projet 2 du parcours développeur Front-end chez Openclassrooms qui a pour objectif d’intégrer la maquette du site Reservia, un site permettant aux usagers de trouver des hébergements et des activités dans la ville de leur choix.
 
 ## Maquette Desktop
 
 ![alt tag](https://user.oc-static.com/upload/2020/08/24/1598262857804_Maquette%20reservia-min.png)
 
 ## Éléments fournis par l’entreprise virtuelle
-
-Ce qu'il est requis pour commencer avec votre projet...
 
 - La maquette desktop
 - La maquette mobile
