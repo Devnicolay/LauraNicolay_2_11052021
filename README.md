@@ -2,10 +2,13 @@
 
 # Reservia
 
-
 ## Description
 
 Projet 2 du parcours développeur Front-end chez Openclassrooms qui a pour objectif d’intégrer la maquette du site Reservia, un site permettant aux usagers de trouver des hébergements et des activités dans la ville de leur choix.
+
+## Lien du projet
+
+[Site Web FishEye](https://devnicolay.github.io/LauraNicolay_2_11052021//)
 
 ## Maquette Desktop
 
@@ -20,7 +23,6 @@ Projet 2 du parcours développeur Front-end chez Openclassrooms qui a pour objec
 - Les couleurs de la charte sont le bleu #0065FC, sa version plus claire #DEEBFF et le gris #F2F2F2
 - La police du site est Raleway
 
-
 ## Cahier des charges
 
 - Uniquement en HTML et CSS. Ne pas utiliser de Framework ou pré-compilateur CSS (comme SASS)
@@ -30,7 +32,7 @@ Projet 2 du parcours développeur Front-end chez Openclassrooms qui a pour objec
 - Les liens « hébergements » et « Activités » de la navigation doivent être des ancres et mener aux sections de page
 - Intégrer les icones FontAwesome en HTML et CSS
 - Utiliser Flexbox et si l’on arrive GRID
-- Utiliser les balises sémantiques 
+- Utiliser les balises sémantiques
 - Le code ne doit avoir aucune erreur ni alerte au validateur W3C HTML et CSS
 - Le site devra être compatible avec Chrome et Firefox
 
@@ -40,5 +42,3 @@ Projet 2 du parcours développeur Front-end chez Openclassrooms qui a pour objec
 - Git
 - GitHub pour le versionning
 - Heberger le site sur GitHub Pages
-
-
