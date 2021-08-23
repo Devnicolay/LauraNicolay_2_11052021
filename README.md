@@ -8,7 +8,7 @@ Projet 2 du parcours développeur Front-end chez Openclassrooms qui a pour objec
 
 ## Lien du projet
 
-[Site Web FishEye](https://devnicolay.github.io/LauraNicolay_2_11052021//)
+[Site Web Reservia](https://devnicolay.github.io/LauraNicolay_2_11052021//)
 
 ## Maquette Desktop
 
